@@ -146,6 +146,10 @@ pwa:
       # available" prompt — cached copies went stale with no way to refresh.
       - "/resume"
       - "/projects"
+      # ...and the assets those pages load. These do not live under /resume,
+      # so without listing them a stale stylesheet outlives the page itself.
+      - "/assets/resume"
+      - "/assets/projects"
 
 paginate: 10
 
