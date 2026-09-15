@@ -2,277 +2,618 @@
 layout: raw
 permalink: /resume/en/
 ---
-<!DOCTYPE HTML>
-<!--
-	Content by Yong-Gi Hong (hyg4438@gmail.com)
-	Template: "Read Only" by HTML5 UP
-	html5up.net | @ajlkn | Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
--->
+<!DOCTYPE html>
 <html lang="en">
-	<head>
-		<title>Yong-Gi Hong · Medical Imaging AI Engineer</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<meta name="description" content="Yong-Gi Hong - Medical Imaging AI Engineer. Designs, ships, and clinically validates deep learning pipelines for CT/MRI/PET/X-ray segmentation, registration, reconstruction, detection, and GAN synthesis." />
-		<link rel="stylesheet" href="/assets/resume/css/fontawesome-all.min.css" />
-		<link rel="stylesheet" href="/assets/resume/css/main.css" />
-		<style>
-			.lang-switch{position:fixed;bottom:16px;left:16px;z-index:10000;background:rgba(0,0,0,.55);border-radius:4px;overflow:hidden;}
-			.lang-switch a{display:inline-block;padding:6px 12px;color:#fff;font-size:0.8em;letter-spacing:0.1em;text-decoration:none;}
-			.lang-switch a.active{background:rgba(255,255,255,.18);}
-			table.resume-table{width:100%;}
-			table.resume-table th{text-align:left;white-space:nowrap;padding-right:1em;}
-			ul.feature-icons li{margin-bottom:1.4em;}
-			.tag{display:inline-block;font-size:0.75em;padding:0.15em 0.6em;margin:0.15em 0.3em 0.15em 0;border:1px solid rgba(0,0,0,.15);border-radius:3px;color:inherit;opacity:.75;}
-			.proj-card{border:1px solid rgba(0,0,0,.08);border-radius:6px;padding:1.2em 1.4em;height:100%;box-sizing:border-box;}
-			.note{font-size:0.85em;opacity:.7;}
-		</style>
-	</head>
-	<body class="is-preload">
-		<div class="lang-switch"><a href="/resume/">KO</a><a href="/resume/en/" class="active">EN</a></div>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Yong-Gi Hong · Medical Imaging AI Engineer</title>
+  <meta name="description" content="Yong-Gi Hong - Medical Imaging AI Engineer. Designs, ships, and clinically validates deep learning pipelines for CT/MRI/PET/X-ray/EEG segmentation, registration, reconstruction, detection, and GAN synthesis.">
+  <link rel="stylesheet" href="/assets/resume/css/fontawesome-all.min.css">
+  <link rel="stylesheet" href="/assets/resume/css/modern.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+<a class="skip-link" href="#about">Skip to main content</a>
 
-		<!-- Header -->
-			<section id="header">
-				<header>
-					<span class="image avatar"><img src="https://avatars.githubusercontent.com/u/39263586?v=4" alt="Yong-Gi Hong" /></span>
-					<h1 id="logo"><a href="#">Yong-Gi Hong</a></h1>
-					<p>Medical Imaging AI Engineer · AI Team Lead<br />
-					"I build medical AI that ships and gets validated in the clinic."</p>
-				</header>
-				<nav id="nav">
-					<ul>
-						<li><a href="#one" class="active">About</a></li>
-						<li><a href="#two">Experience</a></li>
-						<li><a href="#three">Education</a></li>
-						<li><a href="#four">Portfolio</a></li>
-						<li><a href="#five">Patents</a></li>
-						<li><a href="#six">Publications</a></li>
-						<li><a href="#seven">Certifications</a></li>
-					</ul>
-				</nav>
-				<footer>
-					<ul class="icons">
-						<li><a href="mailto:hyg4438@gmail.com" class="icon solid fa-envelope"><span class="label">Email</span></a></li>
-						<li><a href="https://github.com/HongYongGi" class="icon brands fa-github"><span class="label">Github</span></a></li>
-						<li><a href="https://www.linkedin.com/in/yong-gi-hong-3451a517a" class="icon brands fa-linkedin"><span class="label">LinkedIn</span></a></li>
-						<li><a href="/" class="icon solid fa-blog"><span class="label">Blog</span></a></li>
-					</ul>
-				</footer>
-			</section>
+<header>
+  <nav class="nav" id="site-nav">
+    <div class="nav-inner container">
+      <a href="#" class="nav-brand" aria-label="Yong-Gi Hong — home">
+        <img src="https://avatars.githubusercontent.com/u/39263586?v=4" alt="" class="nav-avatar" />
+        <span>Yong-Gi Hong</span>
+      </a>
 
-		<!-- Wrapper -->
-			<div id="wrapper">
-				<div id="main">
+      <ul class="nav-links">
+        <li><a class="nav-link" href="#about">About</a></li>
+        <li><a class="nav-link" href="#experience">Experience</a></li>
+        <li><a class="nav-link" href="#education">Education</a></li>
+        <li><a class="nav-link" href="#portfolio">Portfolio</a></li>
+        <li><a class="nav-link" href="#patents">Patents</a></li>
+        <li><a class="nav-link" href="#publications">Publications</a></li>
+        <li><a class="nav-link" href="#certifications">Certifications</a></li>
+      </ul>
 
-					<!-- One: About + Skills -->
-						<section id="one">
-							<div class="container">
-								<header class="major">
-									<h2>About</h2>
-								</header>
-								<p style="font-size:1.1em;line-height:1.6em;">
-									Medical imaging AI engineer who turns qualitative clinical judgment into <b>quantitative, reproducible pipelines</b> across CT, MRI, PET, X-ray, and EEG, and takes models all the way from research to <b>product release and clinical validation</b>. I design and implement full pipelines — segmentation, registration, reconstruction, detection, and GAN-based synthesis — and have scaled them into <b>production systems</b> with end-to-end automated testing, multi-GPU batching, and Docker/CI-CD serving, growing from an individual contributor into an <b>AI team lead</b>.<br /><br />
-									4 yr 3 mo in medical AI · 3+ shipped products · 4 papers (incl. 1st-author SCI) · 2 registered patents · 2 registered copyrights.<br />
-									Highlights: lung-cancer RECIST auto-assessment at <b>91% accuracy</b> (lesion Dice 82%, validated at Asan Medical Center) · PET reconstruction model <b>257× lighter</b> (SSIM 0.983) · posture-dependent lobar volume change quantified at <b>+90.2 mL (LLL)</b>.
-								</p>
-							</div>
-							<div class="container">
-								<header class="major">
-									<h2>Skills</h2>
-								</header>
-								<table class="resume-table">
-									<tr><th>Modalities</th><td>CT · MRI · PET · X-ray · EEG · Cephalogram</td></tr>
-									<tr><th>AI Tasks</th><td>Segmentation · Registration · Reconstruction · Detection · Classification · Image Synthesis (GAN)</td></tr>
-									<tr><th>Models</th><td>nnUNet (v2, 2D/3D) · SwinUNETR · U-Net · VoxelMorph · CycleMorph · Inception-ResNet · CycleGAN / DP-GAN / BMD-GAN / OASIS</td></tr>
-									<tr><th>Image Processing</th><td>DICOM/NIfTI · HU clipping · Patch/Sliding-Window · Rigid/Affine registration · VTK (marching cubes) · Radon/Sinogram</td></tr>
-									<tr><th>Languages &amp; Serving</th><td>Python (primary) · C · FastAPI · Django · Docker · CUDA · GitOps CI/CD · model compression</td></tr>
-									<tr><th>Collaboration</th><td>Gradio · Streamlit · Git/GitHub/GitLab · Notion · Jira · Figma · Slack</td></tr>
-								</table>
-							</div>
-						</section>
+      <div class="nav-actions">
+        <div class="lang-toggle" aria-label="Language selector">
+          <a href="/resume/">KO</a>
+          <a href="/resume/en/" class="is-active" aria-current="page">EN</a>
+        </div>
 
-					<!-- Two: Experience -->
-						<section id="two">
-							<div class="container">
-								<h3>Work Experience</h3>
-								<ul class="feature-icons">
-									<li class="icon solid fa-building">
-										<b>DivineTech — AI Team Lead</b> <span class="note">Sep 2025 – Present</span><br />
-										Design and development of <b>cardiosim-ai</b>, an automated TAVR planning pipeline from cardiac CT; team lead.
-										<ul>
-											<li>Designed a 3-model nnUNetv2 cascade: 23-class whole-heart segmentation → Aorta/LV/Coronary sub-segmentation → 9-point landmark detection from a 2-channel CT+mask input</li>
-											<li>Recovered missing landmarks via probability maps (center-of-mass/argmax); aligned IJK/RAS/VTK coordinate systems; generated STL meshes with VTK marching cubes</li>
-											<li>Modeled a 3-leaflet valve from 3 commissure points; auto-extracted calcification by HU thresholding; fit centerline to auto-measure TAVR metrics</li>
-											<li>Polling-worker + REST architecture, GPU lazy load/release, 2-GPU parallel batching, stage-level fault tolerance with E2E tests, Docker/GitOps CI-CD</li>
-										</ul>
-										<span class="tag">nnUNetv2</span><span class="tag">PyTorch/CUDA</span><span class="tag">VTK</span><span class="tag">SimpleITK</span><span class="tag">Docker/GitOps</span>
-									</li>
-									<li class="icon solid fa-building">
-										<b>Tesser — R&amp;D AI Researcher</b> <span class="note">May 2023 – Aug 2025 · 2 yr 3 mo</span><br />
-										Owned the full <b>AIRECIST</b> pipeline for automated lung-cancer RECIST response assessment.
-										<ul>
-											<li>Reframed a reproducibility problem (inter-reader RECIST agreement below 70%) into four stages: lesion segmentation → pre/post registration → tumor tracking → automated RECIST decision</li>
-											<li>Combined nnUNet-based segmentation with ROI preprocessing (DICOM→NIfTI, lung-window HU clipping); implemented VoxelMorph-based registration and a custom tumor-tracking algorithm</li>
-											<li>Result: lesion Dice 82%, RECIST auto-decision 91% accuracy, clinically validated at Asan Medical Center (Dept. of Radiology)</li>
-											<li>Contributed to a MOTIE national R&amp;D project (cardiovascular biomechanics digital simulator), DCE-MRI breast-cancer segmentation, and LLM prompt engineering</li>
-										</ul>
-										<span class="tag">CT</span><span class="tag">Lung Segmentation</span><span class="tag">Registration</span><span class="tag">RECIST</span>
-									</li>
-									<li class="icon solid fa-building">
-										<b>MedicalIP — R&amp;D AI Researcher</b> <span class="note">Mar 2022 – Apr 2023 · 1 yr 1 mo</span><br />
-										Developed and productized commercial segmentation, GAN, and registration models.
-										<ul>
-											<li><b>DeepCATCH</b> (commercial): whole-body CT multi-organ segmentation with 30+ classes using 2D/3D nnUNet, SwinUNETR, U-Net — consistent quality across large multi-center data</li>
-											<li><b>TiSepX</b> (commercial): X-ray tissue separation GAN (bone/lung/pulmonary) — benchmarked CycleGAN, DP-GAN, BMD-GAN, OASIS; model compression for fracture detection and DEXA BMD use</li>
-											<li><b>Lung / Multi-phase Registration</b> (registered patent, co-inventor): Lung Seg → Affine → DL registration (VoxelMorph-based cascade), patch training with sliding-window inference</li>
-											<li>Result: quantified prone-posture lobar volume gain of +90.2 mL (LLL) / +52.5 mL (RLL), established an LLL volume–FVC correlation</li>
-										</ul>
-										<span class="tag">nnUNet</span><span class="tag">SwinUNETR</span><span class="tag">VoxelMorph</span><span class="tag">CycleGAN family</span>
-									</li>
-									<li class="icon solid fa-flask">
-										<b>Gachon University, MMMIL Lab — Undergraduate/Graduate Researcher</b> <span class="note">Jul 2018 – Feb 2022</span><br />
-										Multi-modality medical imaging research.
-										<ul>
-											<li>EEG breathing-pattern classification with LDA/Random Forest → 1st-author SCI paper (Brain Sciences, 2021)</li>
-											<li>AI-Dentis (malocclusion &amp; cephalogram): Inception-ResNet classifier with Grad-CAM → novel first-molar relative-distance classification (master's thesis, patent, web commercialization); 46-landmark cephalogram detection and a labeling tool</li>
-											<li>PET reconstruction (SITL): physics-informed lightweight model — 247K parameters (vs. DeepPET's 63.6M → 257× lighter), SSIM 0.983 / PSNR 36.6 dB, validated with a self-fabricated PET phantom</li>
-										</ul>
-										<span class="tag">EEG</span><span class="tag">Inception-ResNet</span><span class="tag">PET Reconstruction</span>
-									</li>
-								</ul>
-							</div>
-						</section>
+        <button type="button" id="theme-toggle" class="theme-toggle" aria-label="Toggle dark / light mode">
+          <i class="fas fa-moon icon-dark" aria-hidden="true"></i>
+          <i class="fas fa-sun icon-light" aria-hidden="true"></i>
+        </button>
 
-					<!-- Three: Education -->
-						<section id="three">
-							<div class="container">
-								<h3>Education</h3>
-								<table class="resume-table">
-									<tr>
-										<th>2020.03 – 2022.02</th>
-										<td>Gachon University — <b>M.Eng.</b>, Biomedical Engineering<br />GPA 4.38/4.5 · MMMIL Lab<br /><span class="note">M.S. Thesis: Deep-learning malocclusion classification using pseudo relative distance between first molars (2022)</span></td>
-									</tr>
-									<tr>
-										<th>2014.03 – 2020.02</th>
-										<td>Gachon University — <b>B.Eng.</b>, Biomedical Engineering<br /><span class="note">Military service (2015–2017)</span></td>
-									</tr>
-								</table>
-							</div>
-						</section>
+        <button type="button" id="nav-toggle" class="nav-toggle" aria-label="Open menu" aria-controls="nav-mobile" aria-expanded="false">
+          <span class="nav-toggle-bars">
+            <span class="nav-toggle-bar"></span>
+            <span class="nav-toggle-bar"></span>
+            <span class="nav-toggle-bar"></span>
+          </span>
+        </button>
+      </div>
+    </div>
 
-					<!-- Four: Portfolio -->
-						<section id="four">
-							<div class="container">
-								<h3>Portfolio</h3>
-								<p>Selected GitHub projects. Full list at <a href="https://github.com/HongYongGi">github.com/HongYongGi</a>.</p>
-								<div class="row gtr-uniform">
-									<div class="col-6 col-12-small">
-										<div class="proj-card">
-											<h4>TAVR CT Measurement Pipeline</h4>
-											<p>Auto-computes 17 TAVR CT metrics from cardiac CT segmentation masks and landmarks — the core module of cardiosim-ai.</p>
-											<ul class="actions small"><li><a href="https://github.com/HongYongGi/tavr-ct-measurement" class="button small">GitHub</a></li></ul>
-										</div>
-									</div>
-									<div class="col-6 col-12-small">
-										<div class="proj-card">
-											<h4>Cardiac Calcium / Stent Extraction</h4>
-											<p>Extracts coronary/aortic calcification from cardiac CT while keeping the metallic stent mask separate (HU-threshold based).</p>
-											<ul class="actions small"><li><a href="https://github.com/HongYongGi/cardiac-calcium-stent-extraction" class="button small">GitHub</a></li></ul>
-										</div>
-									</div>
-									<div class="col-6 col-12-small">
-										<div class="proj-card">
-											<h4>Medical 3D Viewer</h4>
-											<p>Streamlit-based medical imaging viewer with nnUNetv2 segmentation, MPR, and 3D visualization (Go + Three.js).</p>
-											<ul class="actions small"><li><a href="https://github.com/HongYongGi/medical-3d-viewer" class="button small">GitHub</a></li></ul>
-										</div>
-									</div>
-									<div class="col-6 col-12-small">
-										<div class="proj-card">
-											<h4>Bone Fracture Detection AI</h4>
-											<p>X-ray bone fracture detection AI (ResNet50 + Grad-CAM, Acc 99.01% / AUC 0.9983).</p>
-											<ul class="actions small"><li><a href="https://github.com/HongYongGi/bone-fracture" class="button small">GitHub</a></li></ul>
-										</div>
-									</div>
-									<div class="col-6 col-12-small">
-										<div class="proj-card">
-											<h4>Lung Registration</h4>
-											<p>VoxelMorph-based 3D lung image registration training/inference code (related to registered patent 10-2750467).</p>
-											<ul class="actions small"><li><a href="https://github.com/HongYongGi/LungRegistration" class="button small">GitHub</a></li></ul>
-										</div>
-									</div>
-									<div class="col-6 col-12-small">
-										<div class="proj-card">
-											<h4>EEG_ML</h4>
-											<p>EEG-based breathing pattern classification (LDA, Random Forest) — code for the 1st-author SCI paper.</p>
-											<ul class="actions small"><li><a href="https://github.com/HongYongGi/EEG_ML" class="button small">GitHub</a></li></ul>
-										</div>
-									</div>
-								</div>
-							</div>
-						</section>
+    <div class="nav-mobile" id="nav-mobile">
+      <div class="nav-mobile-inner">
+        <a class="nav-mobile-link" href="#about">About</a>
+        <a class="nav-mobile-link" href="#experience">Experience</a>
+        <a class="nav-mobile-link" href="#education">Education</a>
+        <a class="nav-mobile-link" href="#portfolio">Portfolio</a>
+        <a class="nav-mobile-link" href="#patents">Patents</a>
+        <a class="nav-mobile-link" href="#publications">Publications</a>
+        <a class="nav-mobile-link" href="#certifications">Certifications</a>
+      </div>
+    </div>
+  </nav>
 
-					<!-- Five: Patents & Copyrights -->
-						<section id="five">
-							<div class="container">
-								<h3>Patents &amp; Copyrights</h3>
-								<table class="resume-table">
-									<tr><th>Reg. 10-2782506</th><td>Ensemble-based malocclusion classification method &amp; application (registered 2025.03.12) — co-inventor, related to AI-Dentis</td></tr>
-									<tr><th>Reg. 10-2750467</th><td>Medical image registration method and apparatus (registered 2024.12.31) — co-inventor, related to Lung Registration</td></tr>
-								</table>
-								<br />
-								<table class="resume-table">
-									<tr><th>C-2020-041029-2</th><td>Malocclusion classification web — registered copyright, work-for-hire contributor (commercialized, Dentis)</td></tr>
-									<tr><th>C-2021-033245</th><td>Cephalogram X-ray labeling tool — registered copyright, work-for-hire contributor (commercialized, Dentis)</td></tr>
-								</table>
-							</div>
-						</section>
+  <section class="hero" id="home">
+    <div class="container hero-inner">
+      <div class="hero-body">
+        <span class="hero-eyebrow reveal">
+          <span class="dot"></span>
+          Medical Imaging AI Engineer · AI Team Lead
+        </span>
 
-					<!-- Six: Publications -->
-						<section id="six">
-							<div class="container">
-								<h3>Publications</h3>
-								<ul>
-									<li><b>Hong, Yong-Gi et al.</b>, "Identification of Breathing Patterns through EEG Signal Analysis Using Machine Learning," <i>Brain Sciences</i> 11(3):293, 2021. <b>[SCI · 1st author]</b></li>
-									<li>Y.-G. Hong, "Deep-learning malocclusion classification using pseudo relative distance between first molars," M.S. thesis, Gachon Univ., 2022.</li>
-									<li>"Image Reconstruction Network with Sinogram-to-Image Transform Layer for Projection Data" (PET). <span class="note">[in progress]</span></li>
-									<li>"Deep-learning segmentation &amp; registration-driven lung parenchymal volume/movement CT analysis in prone positioning." <span class="note">[in progress]</span></li>
-								</ul>
-							</div>
-						</section>
+        <h1 class="hero-title reveal reveal--delay-1">Yong-Gi Hong</h1>
 
-					<!-- Seven: Certifications & Awards -->
-						<section id="seven">
-							<div class="container">
-								<h3>Certifications &amp; Awards</h3>
-								<ul>
-									<li><b>2nd place (2 of 32 teams), 2025 SeSAC Hackathon offline finals</b> — hosted by DACON; Seoul Mayor's Award (Dec 2025)<br /><span class="note">Team NEST Lab — insect ecology &amp; risk platform: YOLOv8 detection + hierarchical classification + risk assessment web service</span></li>
-									<li>Ansys Certified Expert / Fluids channel-partner certifications ×4 (Jul 2026, Synopsys)</li>
-								</ul>
-							</div>
-						</section>
+        <blockquote class="quote reveal reveal--delay-2">
+          <p>"I build medical AI that ships and gets validated in the clinic."</p>
+        </blockquote>
 
-				</div>
+        <div class="hero-actions reveal reveal--delay-3">
+          <a href="mailto:hyg4438@gmail.com" class="btn btn-primary">
+            <i class="fas fa-envelope" aria-hidden="true"></i>
+            Get in Touch
+          </a>
+          <a href="#portfolio" class="btn btn-outline">View Portfolio</a>
+        </div>
 
-				<!-- Footer -->
-					<section id="footer">
-						<div class="container">
-							<ul class="copyright">
-								<li>&copy; Yong-Gi Hong. All rights reserved.</li><li>Template: <a href="https://html5up.net">HTML5 UP</a></li>
-							</ul>
-						</div>
-					</section>
+        <div class="social-links reveal reveal--delay-4">
+          <a class="social-link" href="mailto:hyg4438@gmail.com" aria-label="Send email">
+            <i class="fas fa-envelope" aria-hidden="true"></i>
+          </a>
+          <a class="social-link" href="https://github.com/HongYongGi" target="_blank" rel="noopener" aria-label="GitHub profile">
+            <i class="fab fa-github" aria-hidden="true"></i>
+          </a>
+          <a class="social-link" href="https://www.linkedin.com/in/yong-gi-hong-3451a517a" target="_blank" rel="noopener" aria-label="LinkedIn profile">
+            <i class="fab fa-linkedin" aria-hidden="true"></i>
+          </a>
+          <a class="social-link" href="/" aria-label="Blog home">
+            <i class="fas fa-blog" aria-hidden="true"></i>
+          </a>
+        </div>
+      </div>
 
-			</div>
+      <div class="hero-visual reveal reveal--delay-2">
+        <img src="https://avatars.githubusercontent.com/u/39263586?v=4" alt="Yong-Gi Hong profile photo" />
+      </div>
+    </div>
+  </section>
+</header>
 
-		<!-- Scripts -->
-			<script src="/assets/resume/js/jquery.min.js"></script>
-			<script src="/assets/resume/js/jquery.scrollex.min.js"></script>
-			<script src="/assets/resume/js/jquery.scrolly.min.js"></script>
-			<script src="/assets/resume/js/browser.min.js"></script>
-			<script src="/assets/resume/js/breakpoints.min.js"></script>
-			<script src="/assets/resume/js/util.js"></script>
-			<script src="/assets/resume/js/main.js"></script>
+<section class="section section--alt" id="about">
+  <div class="container">
+    <div class="section-header reveal">
+      <span class="section-label">About</span>
+      <h2 class="section-title">About</h2>
+    </div>
 
-	</body>
+    <div class="split">
+      <div class="split-media reveal">
+        <div class="grid grid-2 about-stats">
+          <div class="stat card">
+            <span class="stat-value">4 yr 3 mo</span>
+            <span class="stat-label">Medical AI experience</span>
+          </div>
+          <div class="stat card">
+            <span class="stat-value">3+</span>
+            <span class="stat-label">Shipped products</span>
+          </div>
+          <div class="stat card">
+            <span class="stat-value">2</span>
+            <span class="stat-label">Registered patents</span>
+          </div>
+          <div class="stat card">
+            <span class="stat-value">1st-author</span>
+            <span class="stat-label">SCI paper</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="split-body reveal reveal--delay-1">
+        <p>Medical imaging AI engineer who turns qualitative clinical judgment into quantitative, reproducible pipelines across CT, MRI, PET, X-ray, and EEG, and takes models all the way from research to product release and clinical validation. I design and implement full pipelines — segmentation, registration, reconstruction, detection, and GAN-based synthesis — and have scaled them into production systems with end-to-end automated testing, multi-GPU batching, and Docker/CI-CD serving, growing from an individual contributor into an AI team lead. 4 yr 3 mo in medical AI · 3+ shipped products · 4 papers (incl. 1st-author SCI) · 2 registered patents · 2 registered copyrights.</p>
+
+        <blockquote class="quote">
+          Highlights
+          <ul class="tag-list" style="margin-top:var(--space-3)">
+            <li class="tag tag--accent">Lung-cancer RECIST auto-assessment at 91% accuracy (lesion Dice 82%, validated at Asan Medical Center)</li>
+            <li class="tag tag--accent">PET reconstruction model 257× lighter (SSIM 0.983)</li>
+            <li class="tag tag--accent">Posture-dependent lobar volume change quantified at +90.2 mL (LLL)</li>
+          </ul>
+        </blockquote>
+      </div>
+    </div>
+
+    <div class="skills-block reveal reveal--delay-2">
+      <h3 class="card-title" style="font-size:var(--fs-lg); margin-bottom: var(--space-5);">Core Skills</h3>
+      <div class="grid grid-3">
+        <article class="card skill-card reveal">
+          <h4 class="card-title">Modalities</h4>
+          <ul class="tag-list">
+            <li class="tag">CT</li>
+            <li class="tag">MRI</li>
+            <li class="tag">PET</li>
+            <li class="tag">X-ray</li>
+            <li class="tag">EEG</li>
+            <li class="tag">Cephalogram</li>
+          </ul>
+        </article>
+
+        <article class="card skill-card reveal reveal--delay-1">
+          <h4 class="card-title">AI Tasks</h4>
+          <ul class="tag-list">
+            <li class="tag">Segmentation</li>
+            <li class="tag">Registration</li>
+            <li class="tag">Reconstruction</li>
+            <li class="tag">Detection</li>
+            <li class="tag">Classification</li>
+            <li class="tag">Image Synthesis (GAN)</li>
+          </ul>
+        </article>
+
+        <article class="card skill-card reveal reveal--delay-2">
+          <h4 class="card-title">Models</h4>
+          <ul class="tag-list">
+            <li class="tag">nnUNet (v2, 2D/3D)</li>
+            <li class="tag">SwinUNETR</li>
+            <li class="tag">U-Net</li>
+            <li class="tag">VoxelMorph</li>
+            <li class="tag">CycleMorph</li>
+            <li class="tag">Inception-ResNet</li>
+            <li class="tag">CycleGAN</li>
+            <li class="tag">DP-GAN</li>
+            <li class="tag">BMD-GAN</li>
+            <li class="tag">OASIS</li>
+          </ul>
+        </article>
+
+        <article class="card skill-card reveal">
+          <h4 class="card-title">Image Processing</h4>
+          <ul class="tag-list">
+            <li class="tag">DICOM/NIfTI</li>
+            <li class="tag">HU clipping</li>
+            <li class="tag">Patch/Sliding-Window</li>
+            <li class="tag">Rigid/Affine registration</li>
+            <li class="tag">VTK (marching cubes)</li>
+            <li class="tag">Radon/Sinogram</li>
+          </ul>
+        </article>
+
+        <article class="card skill-card reveal reveal--delay-1">
+          <h4 class="card-title">Languages &amp; Serving</h4>
+          <ul class="tag-list">
+            <li class="tag">Python (primary)</li>
+            <li class="tag">C</li>
+            <li class="tag">FastAPI</li>
+            <li class="tag">Django</li>
+            <li class="tag">Docker</li>
+            <li class="tag">CUDA</li>
+            <li class="tag">GitOps CI/CD</li>
+            <li class="tag">model compression</li>
+          </ul>
+        </article>
+
+        <article class="card skill-card reveal reveal--delay-2">
+          <h4 class="card-title">Collaboration</h4>
+          <ul class="tag-list">
+            <li class="tag">Gradio</li>
+            <li class="tag">Streamlit</li>
+            <li class="tag">Git/GitHub/GitLab</li>
+            <li class="tag">Notion</li>
+            <li class="tag">Jira</li>
+            <li class="tag">Figma</li>
+            <li class="tag">Slack</li>
+          </ul>
+        </article>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="experience">
+  <div class="container">
+    <div class="section-header reveal">
+      <span class="section-label">Career</span>
+      <h2 class="section-title">Work Experience</h2>
+      <p class="section-desc">4 years 3 months across the full medical-imaging spectrum — cardiac CT, chest CT, X-ray, and PET.</p>
+    </div>
+
+    <div class="timeline">
+      <!-- 1. DivineTech -->
+      <article class="timeline-item reveal">
+        <div class="timeline-marker"></div>
+        <div class="timeline-content card">
+          <span class="timeline-date">Sep 2025 — Present</span>
+          <h3 class="timeline-title">AI Team Lead</h3>
+          <span class="timeline-org">DivineTech · cardiosim-ai</span>
+          <div class="timeline-desc">
+            <p>Design and development of <strong>cardiosim-ai</strong>, an automated TAVR planning pipeline from cardiac CT; team lead.</p>
+            <ul>
+              <li>Designed a 3-model nnUNetv2 cascade: 23-class whole-heart segmentation → Aorta/LV/Coronary sub-segmentation → 9-point landmark detection from a 2-channel CT+mask input</li>
+              <li>Recovered missing landmarks via probability maps (center-of-mass/argmax); aligned IJK/RAS/VTK coordinate systems; generated STL meshes with VTK marching cubes</li>
+              <li>Modeled a 3-leaflet valve from 3 commissure points; auto-extracted calcification by HU thresholding; fit centerline to auto-measure TAVR metrics</li>
+              <li>Polling-worker + REST architecture, GPU lazy load/release, 2-GPU parallel batching, stage-level fault tolerance with E2E tests, Docker/GitOps CI-CD</li>
+            </ul>
+          </div>
+          <div class="tag-list" style="margin-top: var(--space-5);">
+            <span class="tag">nnUNetv2</span>
+            <span class="tag">PyTorch/CUDA</span>
+            <span class="tag">VTK</span>
+            <span class="tag">SimpleITK</span>
+            <span class="tag">Docker/GitOps</span>
+          </div>
+        </div>
+      </article>
+
+      <!-- 2. Tesser -->
+      <article class="timeline-item reveal reveal--delay-1">
+        <div class="timeline-marker"></div>
+        <div class="timeline-content card">
+          <span class="timeline-date">May 2023 — Aug 2025 · 2 yr 3 mo</span>
+          <h3 class="timeline-title">R&amp;D AI Researcher</h3>
+          <span class="timeline-org">Tesser · AIRECIST</span>
+          <div class="timeline-desc">
+            <p>Owned the full <strong>AIRECIST</strong> pipeline for automated lung-cancer RECIST response assessment.</p>
+            <ul>
+              <li>Reframed a reproducibility problem (inter-reader RECIST agreement below 70%) into four stages: lesion segmentation → pre/post registration → tumor tracking → automated RECIST decision</li>
+              <li>Combined nnUNet-based segmentation with ROI preprocessing (DICOM→NIfTI, lung-window HU clipping); implemented VoxelMorph-based registration and a custom tumor-tracking algorithm</li>
+              <li>Result: lesion Dice 82%, RECIST auto-decision 91% accuracy, clinically validated at Asan Medical Center (Dept. of Radiology)</li>
+              <li>Contributed to a MOTIE national R&amp;D project (cardiovascular biomechanics digital simulator), DCE-MRI breast-cancer segmentation, and LLM prompt engineering</li>
+            </ul>
+          </div>
+          <div class="tag-list" style="margin-top: var(--space-5);">
+            <span class="tag">CT</span>
+            <span class="tag">Lung Segmentation</span>
+            <span class="tag">Registration</span>
+            <span class="tag">RECIST</span>
+          </div>
+        </div>
+      </article>
+
+      <!-- 3. MedicalIP -->
+      <article class="timeline-item reveal reveal--delay-2">
+        <div class="timeline-marker"></div>
+        <div class="timeline-content card">
+          <span class="timeline-date">Mar 2022 — Apr 2023 · 1 yr 1 mo</span>
+          <h3 class="timeline-title">R&amp;D AI Researcher</h3>
+          <span class="timeline-org">MedicalIP</span>
+          <div class="timeline-desc">
+            <p>Developed and productized commercial segmentation, GAN, and registration models.</p>
+            <ul>
+              <li>DeepCATCH (commercial): whole-body CT multi-organ segmentation with 30+ classes using 2D/3D nnUNet, SwinUNETR, U-Net — consistent quality across large multi-center data</li>
+              <li>TiSepX (commercial): X-ray tissue separation GAN (bone/lung/pulmonary) — benchmarked CycleGAN, DP-GAN, BMD-GAN, OASIS; model compression for fracture detection and DEXA BMD use</li>
+              <li>Lung / Multi-phase Registration (registered patent, co-inventor): Lung Seg → Affine → DL registration (VoxelMorph-based cascade), patch training with sliding-window inference</li>
+              <li>Result: quantified prone-posture lobar volume gain of +90.2 mL (LLL) / +52.5 mL (RLL), established an LLL volume–FVC correlation</li>
+            </ul>
+          </div>
+          <div class="tag-list" style="margin-top: var(--space-5);">
+            <span class="tag">nnUNet</span>
+            <span class="tag">SwinUNETR</span>
+            <span class="tag">VoxelMorph</span>
+            <span class="tag">CycleGAN family</span>
+          </div>
+        </div>
+      </article>
+
+      <!-- 4. Gachon MMMIL -->
+      <article class="timeline-item reveal reveal--delay-3">
+        <div class="timeline-marker"></div>
+        <div class="timeline-content card">
+          <span class="timeline-date">Jul 2018 — Feb 2022</span>
+          <h3 class="timeline-title">Undergraduate / Graduate Researcher</h3>
+          <span class="timeline-org">Gachon University, MMMIL Lab · Advisor: Prof. Haeng-Geun Kim</span>
+          <div class="timeline-desc">
+            <p>Multi-modality medical imaging research.</p>
+            <ul>
+              <li>EEG breathing-pattern classification with LDA/Random Forest → 1st-author SCI paper (Brain Sciences, 2021)</li>
+              <li>AI-Dentis (malocclusion &amp; cephalogram): Inception-ResNet classifier with Grad-CAM → novel first-molar relative-distance classification (master's thesis, patent, web commercialization); 46-landmark cephalogram detection and a labeling tool</li>
+              <li>PET reconstruction (SITL): physics-informed lightweight model — 247K parameters (vs. DeepPET's 63.6M → 257× lighter), SSIM 0.983 / PSNR 36.6 dB, validated with a self-fabricated PET phantom</li>
+            </ul>
+          </div>
+          <div class="tag-list" style="margin-top: var(--space-5);">
+            <span class="tag">EEG</span>
+            <span class="tag">Inception-ResNet</span>
+            <span class="tag">PET Reconstruction</span>
+          </div>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section class="section section--alt" id="education">
+  <div class="container">
+    <div class="section-header reveal">
+      <span class="section-label">Education</span>
+      <h2 class="section-title">Education</h2>
+    </div>
+
+    <div class="timeline">
+      <article class="timeline-item reveal">
+        <div class="timeline-marker"></div>
+        <div class="timeline-content card">
+          <span class="timeline-date">Mar 2020 — Feb 2022</span>
+          <h3 class="timeline-title">M.Eng., Biomedical Engineering</h3>
+          <span class="timeline-org">Gachon University · GPA 4.38/4.5 · MMMIL Lab</span>
+          <div class="timeline-desc">
+            <p>M.S. Thesis: Deep-learning malocclusion classification using pseudo relative distance between first molars (2022)</p>
+          </div>
+        </div>
+      </article>
+
+      <article class="timeline-item reveal reveal--delay-1">
+        <div class="timeline-marker"></div>
+        <div class="timeline-content card">
+          <span class="timeline-date">Mar 2014 — Feb 2020</span>
+          <h3 class="timeline-title">B.Eng., Biomedical Engineering</h3>
+          <span class="timeline-org">Gachon University</span>
+          <div class="timeline-desc">
+            <p>Military service (2015–2017)</p>
+          </div>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section id="portfolio" class="section">
+  <div class="container">
+    <div class="section-header reveal">
+      <span class="section-label">Portfolio</span>
+      <h2 class="section-title">Selected Projects</h2>
+      <p class="section-desc">Selected GitHub projects. Full list at <a href="https://github.com/HongYongGi" target="_blank" rel="noopener" class="text-accent">github.com/HongYongGi</a>.</p>
+    </div>
+
+    <ul class="grid grid-3">
+      <li class="card card--hover reveal reveal--delay-1">
+        <article>
+          <div class="card-icon"><i class="fab fa-github" aria-hidden="true"></i></div>
+          <h3 class="card-title">TAVR CT Measurement Pipeline</h3>
+          <p class="card-desc">Auto-computes 17 TAVR CT metrics from cardiac CT segmentation masks and landmarks — the core module of cardiosim-ai.</p>
+          <div class="card-meta"><i class="fab fa-github" aria-hidden="true"></i> tavr-ct-measurement</div>
+          <a href="https://github.com/HongYongGi/tavr-ct-measurement" target="_blank" rel="noopener" class="btn btn-outline btn--sm portfolio-link">
+            <i class="fab fa-github" aria-hidden="true"></i> GitHub <i class="fas fa-external-link-alt" aria-hidden="true"></i>
+          </a>
+        </article>
+      </li>
+
+      <li class="card card--hover reveal reveal--delay-2">
+        <article>
+          <div class="card-icon"><i class="fab fa-github" aria-hidden="true"></i></div>
+          <h3 class="card-title">Cardiac Calcium / Stent Extraction</h3>
+          <p class="card-desc">Extracts coronary/aortic calcification from cardiac CT while keeping the metallic stent mask separate (HU-threshold based).</p>
+          <div class="card-meta"><i class="fab fa-github" aria-hidden="true"></i> cardiac-calcium-stent-extraction</div>
+          <a href="https://github.com/HongYongGi/cardiac-calcium-stent-extraction" target="_blank" rel="noopener" class="btn btn-outline btn--sm portfolio-link">
+            <i class="fab fa-github" aria-hidden="true"></i> GitHub <i class="fas fa-external-link-alt" aria-hidden="true"></i>
+          </a>
+        </article>
+      </li>
+
+      <li class="card card--hover reveal reveal--delay-3">
+        <article>
+          <div class="card-icon"><i class="fab fa-github" aria-hidden="true"></i></div>
+          <h3 class="card-title">Medical 3D Viewer</h3>
+          <p class="card-desc">Streamlit-based medical imaging viewer with nnUNetv2 segmentation, MPR, and 3D visualization (Go + Three.js).</p>
+          <div class="card-meta"><i class="fab fa-github" aria-hidden="true"></i> medical-3d-viewer</div>
+          <a href="https://github.com/HongYongGi/medical-3d-viewer" target="_blank" rel="noopener" class="btn btn-outline btn--sm portfolio-link">
+            <i class="fab fa-github" aria-hidden="true"></i> GitHub <i class="fas fa-external-link-alt" aria-hidden="true"></i>
+          </a>
+        </article>
+      </li>
+
+      <li class="card card--hover reveal reveal--delay-4">
+        <article>
+          <div class="card-icon"><i class="fab fa-github" aria-hidden="true"></i></div>
+          <h3 class="card-title">Bone Fracture Detection AI</h3>
+          <p class="card-desc">X-ray bone fracture detection AI (ResNet50 + Grad-CAM, Acc 99.01% / AUC 0.9983).</p>
+          <div class="card-meta"><i class="fab fa-github" aria-hidden="true"></i> bone-fracture</div>
+          <a href="https://github.com/HongYongGi/bone-fracture" target="_blank" rel="noopener" class="btn btn-outline btn--sm portfolio-link">
+            <i class="fab fa-github" aria-hidden="true"></i> GitHub <i class="fas fa-external-link-alt" aria-hidden="true"></i>
+          </a>
+        </article>
+      </li>
+
+      <li class="card card--hover reveal reveal--delay-1">
+        <article>
+          <div class="card-icon"><i class="fab fa-github" aria-hidden="true"></i></div>
+          <h3 class="card-title">Lung Registration</h3>
+          <p class="card-desc">VoxelMorph-based 3D lung image registration training/inference code (related to registered patent 10-2750467).</p>
+          <div class="card-meta"><i class="fab fa-github" aria-hidden="true"></i> LungRegistration</div>
+          <a href="https://github.com/HongYongGi/LungRegistration" target="_blank" rel="noopener" class="btn btn-outline btn--sm portfolio-link">
+            <i class="fab fa-github" aria-hidden="true"></i> GitHub <i class="fas fa-external-link-alt" aria-hidden="true"></i>
+          </a>
+        </article>
+      </li>
+
+      <li class="card card--hover reveal reveal--delay-2">
+        <article>
+          <div class="card-icon"><i class="fab fa-github" aria-hidden="true"></i></div>
+          <h3 class="card-title">EEG_ML</h3>
+          <p class="card-desc">EEG-based breathing pattern classification (LDA, Random Forest) — code for the 1st-author SCI paper.</p>
+          <div class="card-meta"><i class="fab fa-github" aria-hidden="true"></i> EEG_ML</div>
+          <a href="https://github.com/HongYongGi/EEG_ML" target="_blank" rel="noopener" class="btn btn-outline btn--sm portfolio-link">
+            <i class="fab fa-github" aria-hidden="true"></i> GitHub <i class="fas fa-external-link-alt" aria-hidden="true"></i>
+          </a>
+        </article>
+      </li>
+    </ul>
+  </div>
+</section>
+
+<section class="section" id="patents">
+  <div class="container">
+    <div class="section-header reveal">
+      <span class="section-label">Intellectual Property</span>
+      <h2 class="section-title">Patents &amp; Copyrights</h2>
+      <p class="section-desc">Registered patents and software copyrights.</p>
+    </div>
+    <div class="grid grid-2">
+      <article class="card card--hover reveal reveal--delay-1">
+        <div class="card-icon"><i class="fas fa-file-contract"></i></div>
+        <div class="card-meta">
+          <span class="badge badge--accent">Patent</span>
+          <span>Registered 2025.03.12</span>
+        </div>
+        <h3 class="card-title">Ensemble-based malocclusion classification method &amp; application</h3>
+        <p class="card-desc">Co-inventor · related to AI-Dentis</p>
+        <div class="card-meta"><span class="text-accent">Reg. 10-2782506</span></div>
+      </article>
+
+      <article class="card card--hover reveal reveal--delay-2">
+        <div class="card-icon"><i class="fas fa-file-contract"></i></div>
+        <div class="card-meta">
+          <span class="badge badge--accent">Patent</span>
+          <span>Registered 2024.12.31</span>
+        </div>
+        <h3 class="card-title">Medical image registration method and apparatus</h3>
+        <p class="card-desc">Co-inventor · related to Lung Registration</p>
+        <div class="card-meta"><span class="text-accent">Reg. 10-2750467</span></div>
+      </article>
+
+      <article class="card card--hover reveal reveal--delay-3">
+        <div class="card-icon"><i class="fas fa-copyright"></i></div>
+        <div class="card-meta">
+          <span class="badge">Copyright</span>
+        </div>
+        <h3 class="card-title">Malocclusion classification web</h3>
+        <p class="card-desc">Copyright held by Gachon Univ. Industry-Academic Cooperation Foundation (work for hire) · contributor · commercialized at Dentis</p>
+        <div class="card-meta"><span class="text-accent">C-2020-041029-2</span></div>
+      </article>
+
+      <article class="card card--hover reveal reveal--delay-4">
+        <div class="card-icon"><i class="fas fa-copyright"></i></div>
+        <div class="card-meta">
+          <span class="badge">Copyright</span>
+        </div>
+        <h3 class="card-title">Cephalogram X-ray labeling tool</h3>
+        <p class="card-desc">Copyright held by Gachon Univ. Industry-Academic Cooperation Foundation (work for hire) · contributor · commercialized at Dentis</p>
+        <div class="card-meta"><span class="text-accent">C-2021-033245</span></div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section class="section section--alt" id="publications">
+  <div class="container">
+    <div class="section-header reveal">
+      <span class="section-label">Research</span>
+      <h2 class="section-title">Publications</h2>
+      <p class="section-desc">Published and in-progress research.</p>
+    </div>
+    <div class="timeline">
+      <div class="timeline-item reveal">
+        <span class="timeline-marker"></span>
+        <div class="timeline-content">
+          <span class="timeline-date">2021 · SCI · 1st author</span>
+          <h3 class="timeline-title">Identification of Breathing Patterns through EEG Signal Analysis Using Machine Learning</h3>
+          <span class="timeline-org">Hong, Yong-Gi et al., Brain Sciences 11(3):293, 2021</span>
+        </div>
+      </div>
+
+      <div class="timeline-item reveal reveal--delay-1">
+        <span class="timeline-marker"></span>
+        <div class="timeline-content">
+          <span class="timeline-date">2022 · M.S. Thesis</span>
+          <h3 class="timeline-title">Deep-learning malocclusion classification using pseudo relative distance between first molars</h3>
+          <span class="timeline-org">Y.-G. Hong, Gachon Univ.</span>
+        </div>
+      </div>
+
+      <div class="timeline-item reveal reveal--delay-2">
+        <span class="timeline-marker"></span>
+        <div class="timeline-content">
+          <span class="timeline-date">In progress · PET reconstruction</span>
+          <h3 class="timeline-title">"Image Reconstruction Network with Sinogram-to-Image Transform Layer for Projection Data"</h3>
+        </div>
+      </div>
+
+      <div class="timeline-item reveal reveal--delay-3">
+        <span class="timeline-marker"></span>
+        <div class="timeline-content">
+          <span class="timeline-date">In progress · Lung quantitative analysis</span>
+          <h3 class="timeline-title">"Deep-learning segmentation & registration-driven lung parenchymal volume/movement CT analysis in prone positioning."</h3>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="certifications">
+  <div class="container">
+    <div class="section-header reveal">
+      <span class="section-label">Recognition</span>
+      <h2 class="section-title">Certifications &amp; Awards</h2>
+      <p class="section-desc">Awards and certifications held.</p>
+    </div>
+    <div class="grid grid-2">
+      <article class="card card--hover reveal reveal--delay-1">
+        <div class="card-icon"><i class="fas fa-trophy"></i></div>
+        <div class="card-meta">
+          <span class="badge badge--accent">Award</span>
+          <span>Dec 2025</span>
+        </div>
+        <h3 class="card-title">2025 SeSAC Hackathon Offline Finals — 2nd Place (2 of 32 teams) · Seoul Mayor's Award</h3>
+        <p class="card-desc">Hosted by DACON. Team NEST Lab — insect ecology &amp; risk platform: YOLOv8 detection + hierarchical classification + risk assessment web service</p>
+      </article>
+
+      <article class="card card--hover reveal reveal--delay-2">
+        <div class="card-icon"><i class="fas fa-certificate"></i></div>
+        <div class="card-meta">
+          <span class="badge">Certification</span>
+          <span>Jul 2026</span>
+        </div>
+        <h3 class="card-title">Ansys Certified Expert / Fluids Channel-Partner Certifications ×4</h3>
+        <p class="card-desc">Issued by Synopsys</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<footer class="footer" id="footer">
+  <div class="container footer-inner">
+    <p class="footer-note">© Yong-Gi Hong. All rights reserved.</p>
+    <a href="/" class="btn btn-ghost btn--sm footer-back">
+      <i class="fas fa-arrow-left" aria-hidden="true"></i>
+      Back to blog
+    </a>
+  </div>
+</footer>
+
+<script src="/assets/resume/js/modern.js"></script>
+</body>
 </html>
