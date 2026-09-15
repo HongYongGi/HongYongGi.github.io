@@ -202,6 +202,9 @@ layout: raw
             <li class="tag">DP-GAN</li>
             <li class="tag">BMD-GAN</li>
             <li class="tag">OASIS</li>
+            <li class="tag">MONAI</li>
+            <li class="tag">Hugging Face</li>
+            <li class="tag">LLM · RAG</li>
           </ul>
         </article>
 
@@ -227,6 +230,9 @@ layout: raw
             <li class="tag">Docker</li>
             <li class="tag">CUDA</li>
             <li class="tag">GitOps CI/CD</li>
+            <li class="tag">GitHub Actions</li>
+            <li class="tag">AWS · GCP</li>
+            <li class="tag">SQL</li>
             <li class="tag">모델 경량화</li>
           </ul>
         </article>
@@ -241,6 +247,8 @@ layout: raw
             <li class="tag">Jira</li>
             <li class="tag">Figma</li>
             <li class="tag">Slack</li>
+            <li class="tag">Weights &amp; Biases</li>
+            <li class="tag">Redmine</li>
           </ul>
         </article>
       </div>
@@ -296,7 +304,9 @@ layout: raw
               <li>전문의 간 판정 일치율 70% 미만의 재현성 문제를 4단계로 분해: 폐 종양 분할 → 치료 전후 폐 정합 → 종양 추적 → RECIST 자동판정</li>
               <li>nnUNet 계열 분할 + ROI 전처리(DICOM→NIfTI, 폐 윈도우 HU clipping), VoxelMorph 기반 정합, 종양 추적 알고리즘 직접 설계·구현</li>
               <li>결과: 병변 분할 Dice 82%, RECIST 자동판정 정확도 91%, 아산병원 영상의학과 임상 타당성 검증 완료</li>
-              <li>산업통상자원부 국책과제(심혈관계 생체역학 디지털 시뮬레이터) 참여, DCE-MRI 유방암 분할 연구, LLM 프롬프트 엔지니어링 수행</li>
+              <li><strong>Ontol for Clinics</strong>(건강검진 AI 리포트): EMR DB의 검진 수치로 의사 소견 초안을 작성하는 알고리즘 기여</li>
+              <li><strong>TIPS 과제</strong>(유방암 판독지 분석·개인 맞춤형 MRI 3D 시각화): 판독지 요약 NLP 활용, 의료용어 평이화 알고리즘, 유방 MRI의 종양·림프절·체부 분할 모델 개발</li>
+              <li>산업통상자원부 국책과제(심혈관계 생체역학 디지털 시뮬레이터) 참여</li>
             </ul>
           </div>
           <div class="tag-list" style="margin-top: var(--space-5);">
@@ -320,6 +330,7 @@ layout: raw
             <ul>
               <li>DeepCATCH(상용): CT 전신 다장기 분할 30+ class — 2D/3D nnUNet·SwinUNETR·U-Net으로 대용량·다기관 데이터에서 일관 품질 달성</li>
               <li>TiSepX(상용): X-ray 조직 분리 GAN(Bone/Lung/Pulmonary) — CycleGAN·DP-GAN·BMD-GAN·OASIS 비교, 모델 경량화로 골절 검출·DEXA 골밀도 목적 결과 도출</li>
+              <li>CT 볼륨에서 X-ray 영상을 합성해 학습 데이터를 확보(DRR 기반 데이터 생성)</li>
               <li>Lung/Multi-phase Registration(등록 특허, 공동발명자): Lung Seg → Affine → DL Registration(VoxelMorph 기반 Cascade), Patch 학습 + Sliding-Window 추론</li>
               <li>결과: Prone 자세 좌하엽 +90.2mL·우하엽 +52.5mL 부피 증가 정량화, 좌하엽 부피변화–FVC 상관 규명</li>
             </ul>
@@ -608,6 +619,15 @@ layout: raw
         </div>
         <h3 class="card-title">Ansys Certified Expert / Fluids 채널 파트너 인증 4건</h3>
         <p class="card-desc">Synopsys 발급</p>
+      </article>
+
+      <article class="card card--hover reveal reveal--delay-3">
+        <div class="card-icon"><i class="fas fa-landmark"></i></div>
+        <div class="card-meta">
+          <span class="badge">정부 과제</span>
+        </div>
+        <h3 class="card-title">참여 국책·지원 과제</h3>
+        <p class="card-desc">TIPS 과제(유방암 판독지 분석·개인 맞춤형 MRI 3D 시각화) · AI 바우처 프로그램 · 데이터 바우처 프로그램 · 산업통상자원부 심혈관계 생체역학 디지털 시뮬레이터</p>
       </article>
     </div>
   </div>
