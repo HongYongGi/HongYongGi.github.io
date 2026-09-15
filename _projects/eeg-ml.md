@@ -1,6 +1,6 @@
 ---
 title: EEG 호흡 패턴 분류
-order: 6
+order: 7
 summary: >-
   EEG 뇌파 신호로 호흡 패턴을 분류합니다 (LDA · Random Forest) — SCI 제1저자 논문 코드.
 period: "2018 — 2021"

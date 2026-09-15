@@ -999,6 +999,19 @@ strong, b { font-weight: 700; color: var(--ink); }
   border: 1px solid var(--line);
 }
 
+/* Markdown has no figure syntax, so a caption is written as an italic
+   paragraph right after the image. Style that pairing as a real caption. */
+.prose p > img:only-child { margin-bottom: var(--space-3); }
+.prose p > em:only-child {
+  display: block;
+  font-style: normal;
+  font-size: var(--fs-sm);
+  line-height: 1.7;
+  color: var(--muted);
+  padding-left: var(--space-4);
+  border-left: 2px solid var(--line-mid);
+}
+
 .prose figure { margin: 0; }
 .prose figcaption {
   margin-top: var(--space-3);
