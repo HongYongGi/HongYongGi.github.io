@@ -1,0 +1,120 @@
+---
+---
+<!DOCTYPE html>
+<html lang="{{ page.lang | default: 'ko' }}">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{{ page.title }} · 홍용기</title>
+  <meta name="description" content="{{ page.summary | strip_html | truncate: 160 }}">
+  <link rel="stylesheet" href="/assets/resume/css/fontawesome-all.min.css">
+  <link rel="stylesheet" href="/assets/resume/css/modern.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+<a class="skip-link" href="#content">본문으로 건너뛰기</a>
+
+<nav class="nav" id="site-nav">
+  <div class="nav-inner container">
+    <a href="/resume/" class="nav-brand" aria-label="이력서로 돌아가기">
+      <img src="https://avatars.githubusercontent.com/u/39263586?v=4" alt="" class="nav-avatar" />
+      <span>홍용기</span>
+    </a>
+
+    <ul class="nav-links">
+      <li><a class="nav-link" href="/resume/">Resume</a></li>
+      <li><a class="nav-link is-active" href="/projects/">Projects</a></li>
+      <li><a class="nav-link" href="/">Blog</a></li>
+    </ul>
+
+    <div class="nav-actions">
+      <button type="button" id="theme-toggle" class="theme-toggle" aria-label="다크/라이트 모드 전환">
+        <i class="fas fa-moon icon-dark" aria-hidden="true"></i>
+        <i class="fas fa-sun icon-light" aria-hidden="true"></i>
+      </button>
+    </div>
+  </div>
+</nav>
+
+<article>
+  <header class="project-hero">
+    <div class="container">
+      <a href="/projects/" class="project-back">
+        <i class="fas fa-arrow-left" aria-hidden="true"></i> Projects
+      </a>
+
+      <span class="project-eyebrow">
+        {% if page.period %}{{ page.period }}{% endif %}
+        {%- if page.period and page.role %} · {% endif -%}
+        {% if page.role %}{{ page.role }}{% endif %}
+      </span>
+
+      <h1 class="project-title">{{ page.title }}</h1>
+
+      {% if page.summary %}<p class="project-summary">{{ page.summary }}</p>{% endif %}
+
+      {% if page.stack %}
+      <ul class="tag-list project-stack">
+        {% for item in page.stack %}<li class="tag">{{ item }}</li>{% endfor %}
+      </ul>
+      {% endif %}
+
+      <div class="project-actions">
+        {% if page.repo %}
+        <a href="{{ page.repo }}" target="_blank" rel="noopener" class="btn btn-primary btn--sm">
+          <i class="fab fa-github" aria-hidden="true"></i> GitHub
+        </a>
+        {% endif %}
+        {% if page.demo %}
+        <a href="{{ page.demo }}" target="_blank" rel="noopener" class="btn btn-outline btn--sm">
+          <i class="fas fa-play" aria-hidden="true"></i> Live demo
+        </a>
+        {% endif %}
+        {% if page.paper %}
+        <a href="{{ page.paper }}" target="_blank" rel="noopener" class="btn btn-outline btn--sm">
+          <i class="fas fa-file-lines" aria-hidden="true"></i> Paper
+        </a>
+        {% endif %}
+      </div>
+    </div>
+  </header>
+
+  {% if page.metrics %}
+  <section class="section project-metrics-section">
+    <div class="container">
+      <div class="grid grid-3 about-stats project-metrics">
+        {% for m in page.metrics %}
+        <div class="stat">
+          <span class="stat-value">{{ m.value }}</span>
+          <span class="stat-label">{{ m.label }}</span>
+        </div>
+        {% endfor %}
+      </div>
+    </div>
+  </section>
+  {% endif %}
+
+  <section class="section" id="content">
+    <div class="container">
+      <div class="prose">
+        {{ content }}
+      </div>
+    </div>
+  </section>
+</article>
+
+<footer class="footer">
+  <div class="container footer-inner">
+    <p class="footer-note">© Yong-Gi Hong. All rights reserved.</p>
+    <a href="/resume/" class="btn btn-ghost btn--sm">
+      <i class="fas fa-arrow-left" aria-hidden="true"></i> 이력서로 돌아가기
+    </a>
+  </div>
+</footer>
+
+<script src="/assets/resume/js/modern.js"></script>
+</body>
+</html>

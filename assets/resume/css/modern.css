@@ -639,6 +639,7 @@ strong, b { font-weight: 700; color: var(--ink); }
 .skills-block { margin-top: clamp(48px, 6vw, 80px); }
 
 .portfolio-link { width: 100%; }
+.portfolio-link + .portfolio-link { margin-top: var(--space-2); }
 
 /* ---------- 9. Stats (hairline grid) ---------- */
 
@@ -801,6 +802,283 @@ strong, b { font-weight: 700; color: var(--ink); }
   font-size: var(--fs-xs);
   letter-spacing: 0.08em;
   color: var(--muted);
+}
+
+/* ---------- 12b. Project pages ---------- */
+
+.project-hero {
+  padding-block: clamp(40px, 6vw, 88px) clamp(32px, 4vw, 56px);
+}
+
+.project-back {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-2);
+  font-family: var(--font-mono);
+  font-size: var(--fs-xs);
+  font-weight: 600;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--muted);
+  margin-bottom: var(--space-7);
+  transition: color 0.2s var(--ease);
+}
+.project-back:hover { color: var(--ink); }
+
+.project-eyebrow {
+  display: block;
+  font-family: var(--font-mono);
+  font-size: var(--fs-xs);
+  font-weight: 600;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--muted);
+  margin-bottom: var(--space-4);
+}
+
+.project-title {
+  font-size: var(--fs-display);
+  letter-spacing: -0.045em;
+  max-width: 22ch;
+  margin-bottom: var(--space-5);
+}
+
+.project-summary {
+  max-width: 60ch;
+  font-size: var(--fs-md);
+  line-height: 1.8;
+  color: var(--muted);
+  margin-bottom: var(--space-6);
+}
+
+.project-stack { margin-bottom: var(--space-6); }
+
+.project-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-3);
+}
+
+.project-metrics-section { padding-block: 0; border-top: 0; }
+.project-metrics { margin-bottom: clamp(24px, 4vw, 48px); }
+
+/* Prose — long-form project write-up */
+
+.prose {
+  max-width: 74ch;
+  font-size: var(--fs-md);
+  line-height: 1.9;
+  color: var(--ink-soft);
+}
+
+.prose > * + * { margin-top: var(--space-5); }
+
+.prose h2 {
+  font-size: var(--fs-xl);
+  letter-spacing: -0.035em;
+  color: var(--ink);
+  margin-top: clamp(48px, 6vw, 72px);
+  padding-top: var(--space-6);
+  border-top: 1px solid var(--line);
+}
+.prose h2:first-child { margin-top: 0; padding-top: 0; border-top: 0; }
+
+.prose h3 {
+  font-size: var(--fs-lg);
+  color: var(--ink);
+  margin-top: var(--space-7);
+}
+
+.prose p { margin-bottom: 0; }
+
+.prose ul, .prose ol {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-3);
+  padding-left: 0;
+}
+
+.prose ul > li {
+  position: relative;
+  padding-left: var(--space-5);
+}
+.prose ul > li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0.85em;
+  width: 8px;
+  height: 1px;
+  background: var(--line-mid);
+}
+
+.prose ol { counter-reset: prose-ol; }
+.prose ol > li {
+  position: relative;
+  padding-left: var(--space-7);
+  counter-increment: prose-ol;
+}
+.prose ol > li::before {
+  content: counter(prose-ol, decimal-leading-zero);
+  position: absolute;
+  left: 0;
+  top: 0;
+  font-family: var(--font-mono);
+  font-size: var(--fs-xs);
+  font-weight: 600;
+  color: var(--muted);
+}
+
+.prose a {
+  color: var(--ink);
+  font-weight: 500;
+  border-bottom: 1px solid var(--line-mid);
+  transition: border-color 0.2s var(--ease);
+}
+.prose a:hover { border-color: var(--ink); }
+
+.prose code {
+  font-family: var(--font-mono);
+  font-size: 0.875em;
+  padding: 2px 6px;
+  border: 1px solid var(--line);
+  background: var(--bg-alt);
+}
+
+.prose pre {
+  overflow-x: auto;
+  padding: var(--space-5);
+  border: 1px solid var(--line);
+  background: var(--bg-alt);
+  font-size: var(--fs-sm);
+  line-height: 1.7;
+}
+.prose pre code { border: 0; padding: 0; background: none; }
+
+.prose blockquote {
+  margin: 0;
+  padding-left: var(--space-5);
+  border-left: 2px solid var(--ink);
+  color: var(--ink);
+  font-weight: 500;
+}
+
+.prose table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: var(--fs-sm);
+  display: block;
+  overflow-x: auto;
+}
+.prose th, .prose td {
+  text-align: left;
+  padding: var(--space-3) var(--space-4);
+  border-bottom: 1px solid var(--line);
+}
+.prose th {
+  font-size: var(--fs-xs);
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--muted);
+  border-bottom-color: var(--line-mid);
+  white-space: nowrap;
+}
+
+.prose img {
+  width: 100%;
+  border: 1px solid var(--line);
+}
+
+.prose figure { margin: 0; }
+.prose figcaption {
+  margin-top: var(--space-3);
+  font-family: var(--font-mono);
+  font-size: var(--fs-xs);
+  letter-spacing: 0.06em;
+  color: var(--muted);
+}
+
+.prose hr {
+  border: 0;
+  border-top: 1px solid var(--line);
+  margin-block: var(--space-7);
+}
+
+/* Placeholder for a figure that has no image yet */
+.figure-todo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 220px;
+  padding: var(--space-6);
+  border: 1px dashed var(--line-mid);
+  background: var(--bg-alt);
+  font-family: var(--font-mono);
+  font-size: var(--fs-xs);
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--muted-soft);
+  text-align: center;
+}
+
+/* Project index */
+
+.project-list {
+  display: grid;
+  gap: 1px;
+  background: var(--line);
+  border-block: 1px solid var(--line);
+}
+
+.project-list-item {
+  display: grid;
+  grid-template-columns: 4.5rem minmax(0, 1fr) auto;
+  gap: var(--space-5);
+  align-items: baseline;
+  padding: clamp(20px, 3vw, 32px) var(--space-2);
+  background: var(--bg);
+  transition: background-color 0.2s var(--ease);
+}
+.project-list-item:hover { background: var(--bg-alt); }
+
+.project-list-index {
+  font-family: var(--font-mono);
+  font-size: var(--fs-xs);
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  color: var(--muted-soft);
+}
+
+.project-list-title {
+  font-size: var(--fs-lg);
+  letter-spacing: -0.03em;
+  margin-bottom: var(--space-2);
+}
+
+.project-list-summary {
+  font-size: var(--fs-sm);
+  color: var(--muted);
+  line-height: 1.7;
+  margin: 0;
+}
+
+.project-list-arrow {
+  font-size: var(--fs-sm);
+  color: var(--muted-soft);
+  transition: transform 0.25s var(--ease), color 0.25s var(--ease);
+}
+.project-list-item:hover .project-list-arrow {
+  color: var(--ink);
+  transform: translateX(4px);
+}
+
+@media (max-width: 620px) {
+  .project-list-item {
+    grid-template-columns: 3rem minmax(0, 1fr);
+    gap: var(--space-4);
+  }
+  .project-list-arrow { display: none; }
 }
 
 /* ---------- 13. Reveal motion ---------- */
