@@ -248,7 +248,6 @@ strong, b { font-weight: 700; color: var(--ink); }
   height: 30px;
   object-fit: cover;
   border: 1px solid var(--line-mid);
-  filter: grayscale(1);
 }
 
 .nav-links {
@@ -471,10 +470,7 @@ strong, b { font-weight: 700; color: var(--ink); }
   object-fit: cover;
   object-position: center 18%;
   border: 1px solid var(--line-mid);
-  filter: grayscale(1) contrast(1.04);
-  transition: filter 0.5s var(--ease);
 }
-.hero-visual:hover img { filter: grayscale(0) contrast(1); }
 
 /* ---------- 6. Buttons ---------- */
 
