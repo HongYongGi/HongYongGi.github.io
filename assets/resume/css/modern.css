@@ -695,11 +695,12 @@ strong, b { font-weight: 700; color: var(--ink); }
 /* ---------- 11. Timeline ---------- */
 
 .timeline {
+  --tl-gutter: clamp(20px, 3vw, 34px);
+  --tl-pad: clamp(28px, 3.6vw, 48px);
   position: relative;
   display: flex;
   flex-direction: column;
-  gap: clamp(24px, 3vw, 40px);
-  padding-left: clamp(20px, 3vw, 34px);
+  padding-left: var(--tl-gutter);
 }
 .timeline::before {
   content: "";
@@ -711,18 +712,29 @@ strong, b { font-weight: 700; color: var(--ink); }
   background: var(--line);
 }
 
-.timeline-item { position: relative; }
+/* One continuous record: entries are divided by a hairline, not boxed. */
+.timeline-item {
+  position: relative;
+  padding-block: var(--tl-pad);
+  border-top: 1px solid var(--line);
+}
+.timeline-item:first-child {
+  padding-top: 0;
+  border-top: 0;
+}
+.timeline-item:last-child { padding-bottom: 0; }
 
 .timeline-marker {
   position: absolute;
-  left: calc(-1 * clamp(20px, 3vw, 34px) - 4px);
-  top: 26px;
+  left: calc(-1 * var(--tl-gutter) - 4px);
+  top: calc(var(--tl-pad) + 6px);
   width: 9px;
   height: 9px;
   background: var(--ink);
 }
+.timeline-item:first-child .timeline-marker { top: 6px; }
 
-.timeline-content { padding: clamp(22px, 2.6vw, 34px); }
+.timeline-content { padding: 0; }
 
 .timeline-date {
   display: block;
@@ -740,14 +752,14 @@ strong, b { font-weight: 700; color: var(--ink); }
   margin-bottom: var(--space-2);
 }
 
+/* No rule under the org line — the entry separators are already hairlines,
+   and two of the same weight this close read as noise. */
 .timeline-org {
   display: block;
   font-size: var(--fs-sm);
   font-weight: 500;
   color: var(--muted);
-  padding-bottom: var(--space-5);
   margin-bottom: var(--space-5);
-  border-bottom: 1px solid var(--line);
 }
 
 .timeline-desc p {
