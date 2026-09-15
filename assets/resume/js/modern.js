@@ -247,3 +247,32 @@
     window.addEventListener("scroll", update, { passive: true });
   }
 })();
+
+
+/* ------------------------------------------------------------------
+   Career length — computed from the start date so the figure on the
+   page cannot drift out of sync the way the hardcoded one did.
+   The markup keeps a correct fallback for no-JS.
+   ------------------------------------------------------------------ */
+(function () {
+  var el = document.querySelector("[data-since]");
+  if (!el) return;
+
+  var parts = (el.getAttribute("data-since") || "").split("-");
+  if (parts.length < 2) return;
+
+  var start = new Date(Number(parts[0]), Number(parts[1]) - 1, 1);
+  var now = new Date();
+  var months = (now.getFullYear() - start.getFullYear()) * 12 + (now.getMonth() - start.getMonth());
+  if (months < 0) return;
+
+  var years = Math.floor(months / 12);
+  var rest = months % 12;
+  var isKorean = document.documentElement.lang === "ko";
+
+  if (isKorean) {
+    el.textContent = rest ? years + "\ub144 " + rest + "\uac1c\uc6d4" : years + "\ub144";
+  } else {
+    el.textContent = rest ? years + " yr " + rest + " mo" : years + " yr";
+  }
+})();
