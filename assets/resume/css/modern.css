@@ -23,7 +23,6 @@
   --bg-raise: #ffffff;
   --inverse-bg: #000000;
   --inverse-fg: #ffffff;
-  --accent: #1a3fe0;
 
   --space-1: 4px;
   --space-2: 8px;
@@ -67,12 +66,11 @@
     --bg-raise: #0f0f0f;
     --inverse-bg: #ffffff;
     --inverse-fg: #000000;
-    --accent: #7e97ff;
     color-scheme: dark;
   }
 }
 
-:root[data-theme="dark"] {
+html:root[data-theme="dark"] {
   --ink: #ffffff;
   --ink-soft: #d4d4d4;
   --muted: #9a9a9a;
@@ -84,7 +82,6 @@
   --bg-raise: #0f0f0f;
   --inverse-bg: #ffffff;
   --inverse-fg: #000000;
-  --accent: #7e97ff;
   color-scheme: dark;
 }
 
@@ -448,7 +445,7 @@ strong, b { font-weight: 700; color: var(--ink); }
   margin-bottom: var(--space-7);
 }
 
-.social-links { display: flex; gap: -1px; }
+.social-links { display: flex; }
 .social-link {
   display: inline-flex;
   align-items: center;
@@ -614,7 +611,7 @@ strong, b { font-weight: 700; color: var(--ink); }
 .card-meta {
   font-family: var(--font-mono);
   font-size: var(--fs-xs);
-  color: var(--muted-soft);
+  color: var(--muted);
   letter-spacing: 0.02em;
   padding-top: var(--space-4);
   border-top: 1px solid var(--line);
@@ -1047,7 +1044,7 @@ strong, b { font-weight: 700; color: var(--ink); }
   font-size: var(--fs-xs);
   font-weight: 600;
   letter-spacing: 0.1em;
-  color: var(--muted-soft);
+  color: var(--muted);
 }
 
 .project-list-title {
