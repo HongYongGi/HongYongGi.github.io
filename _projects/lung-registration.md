@@ -2,7 +2,7 @@
 title: Lung Registration
 order: 5
 summary: >-
-  VoxelMorph 기반 3D 폐 영상 정합 학습·추론 코드 (등록 특허 10-2750467 관련 연구).
+  VoxelMorph 기반 3D 폐 영상 정합 학습·추론 코드 (특허 출원 10-2022-0132732 관련 연구).
 period: "2022 — 2023"
 role: 공동발명자 · 구현
 repo: https://github.com/HongYongGi/LungRegistration
@@ -16,8 +16,8 @@ metrics:
     value: "+90.2 mL"
   - label: 우하엽
     value: "+52.5 mL"
-  - label: 특허
-    value: "10-2750467"
+  - label: 특허 출원
+    value: "10-2022-0132732"
 ---
 
 ## 문제
