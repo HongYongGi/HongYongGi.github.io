@@ -1,0 +1,281 @@
+---
+icon: fas fa-id-card
+order: 1
+title: Resume
+permalink: /resume/
+layout: null
+---
+<!DOCTYPE HTML>
+<!--
+	Content by Yong-Gi Hong (hyg4438@gmail.com)
+	Template: "Read Only" by HTML5 UP
+	html5up.net | @ajlkn | Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html lang="ko">
+	<head>
+		<title>홍용기 · Medical Imaging AI Engineer</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<meta name="description" content="홍용기 - 의료영상 AI 엔지니어. CT/MRI/PET/X-ray 분할·정합·재구성·검출·생성(GAN) 파이프라인을 설계·상용화·임상 검증까지 이끕니다." />
+		<link rel="stylesheet" href="/assets/resume/css/fontawesome-all.min.css" />
+		<link rel="stylesheet" href="/assets/resume/css/main.css" />
+		<style>
+			.lang-switch{position:fixed;bottom:16px;left:16px;z-index:10000;background:rgba(0,0,0,.55);border-radius:4px;overflow:hidden;}
+			.lang-switch a{display:inline-block;padding:6px 12px;color:#fff;font-size:0.8em;letter-spacing:0.1em;text-decoration:none;}
+			.lang-switch a.active{background:rgba(255,255,255,.18);}
+			table.resume-table{width:100%;}
+			table.resume-table th{text-align:left;white-space:nowrap;padding-right:1em;}
+			ul.feature-icons li{margin-bottom:1.4em;}
+			.tag{display:inline-block;font-size:0.75em;padding:0.15em 0.6em;margin:0.15em 0.3em 0.15em 0;border:1px solid rgba(0,0,0,.15);border-radius:3px;color:inherit;opacity:.75;}
+			.proj-card{border:1px solid rgba(0,0,0,.08);border-radius:6px;padding:1.2em 1.4em;height:100%;box-sizing:border-box;}
+			.note{font-size:0.85em;opacity:.7;}
+		</style>
+	</head>
+	<body class="is-preload">
+		<div class="lang-switch"><a href="/resume/" class="active">KO</a><a href="/resume/en/">EN</a></div>
+
+		<!-- Header -->
+			<section id="header">
+				<header>
+					<span class="image avatar"><img src="https://avatars.githubusercontent.com/u/39263586?v=4" alt="Yong-Gi Hong" /></span>
+					<h1 id="logo"><a href="#">홍용기 (Yong-Gi Hong)</a></h1>
+					<p>Medical Imaging AI Engineer · AI 팀 리드<br />
+					"만들고, 출시하고, 임상에서 검증받은 의료 AI를 만듭니다."</p>
+				</header>
+				<nav id="nav">
+					<ul>
+						<li><a href="#one" class="active">About</a></li>
+						<li><a href="#two">Experience</a></li>
+						<li><a href="#three">Education</a></li>
+						<li><a href="#four">Portfolio</a></li>
+						<li><a href="#five">Patents</a></li>
+						<li><a href="#six">Publications</a></li>
+						<li><a href="#seven">Certifications</a></li>
+					</ul>
+				</nav>
+				<footer>
+					<ul class="icons">
+						<li><a href="mailto:hyg4438@gmail.com" class="icon solid fa-envelope"><span class="label">Email</span></a></li>
+						<li><a href="https://github.com/HongYongGi" class="icon brands fa-github"><span class="label">Github</span></a></li>
+						<li><a href="https://www.linkedin.com/in/yong-gi-hong-3451a517a" class="icon brands fa-linkedin"><span class="label">LinkedIn</span></a></li>
+						<li><a href="/" class="icon solid fa-blog"><span class="label">Blog</span></a></li>
+					</ul>
+				</footer>
+			</section>
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+				<div id="main">
+
+					<!-- One: About + Skills -->
+						<section id="one">
+							<div class="container">
+								<header class="major">
+									<h2>About</h2>
+								</header>
+								<p style="font-size:1.1em;line-height:1.6em;">
+									의료영상(CT·MRI·PET·X-ray·EEG)에 딥러닝을 적용해 <b>사람이 정성적으로 판단하던 문제를 데이터로 정량화</b>하고, 모델을 <b>제품 출시와 임상 검증까지</b> 끌고 가는 엔지니어입니다. 분할·정합·재구성·검출·생성(GAN)의 전 파이프라인을 직접 설계·구현하며, 최근에는 자동 검증(E2E)·GPU 배치·Docker/CI-CD 서빙까지 아우르는 <b>운영 가능한 AI 시스템</b>으로 역량을 확장하고, AI 팀 리드로 책임 범위를 넓혀 왔습니다.<br /><br />
+									의료 AI 실무 4년 3개월 · 출시 제품 3건+ · SCI 1저자 포함 논문 4편 · 특허 등록 2건 · 저작권 등록 2건.<br />
+									대표 성과: 폐암 RECIST 자동판정 <b>정확도 91%</b>(병변 분할 Dice 82%, 아산병원 임상 검증) · PET 재구성 모델 <b>257배 경량화</b>(SSIM 0.983) · 자세별 폐엽 부피변화 <b>좌하엽 +90.2mL 정량화</b>.
+								</p>
+							</div>
+							<div class="container">
+								<header class="major">
+									<h2>Skills</h2>
+								</header>
+								<table class="resume-table">
+									<tr><th>의료영상 모달리티</th><td>CT · MRI · PET · X-ray · EEG · Cephalogram</td></tr>
+									<tr><th>AI 태스크</th><td>Segmentation · Registration · Reconstruction · Detection · Classification · Image Synthesis(GAN)</td></tr>
+									<tr><th>딥러닝 모델</th><td>nnUNet(v2, 2D/3D) · SwinUNETR · U-Net · VoxelMorph · CycleMorph · Inception-ResNet · CycleGAN · DP-GAN · BMD-GAN · OASIS</td></tr>
+									<tr><th>영상처리</th><td>DICOM/NIfTI · HU clipping · Patch/Sliding-Window · Rigid/Affine 정합 · VTK(marching cubes) · Radon/Sinogram</td></tr>
+									<tr><th>언어·서빙·인프라</th><td>Python(주력) · C · FastAPI · Django · Docker · CUDA · GitOps CI/CD · 모델 경량화</td></tr>
+									<tr><th>협업·프로토타입</th><td>Gradio · Streamlit · Git/GitHub/GitLab · Notion · Jira · Figma · Slack</td></tr>
+								</table>
+							</div>
+						</section>
+
+					<!-- Two: Experience -->
+						<section id="two">
+							<div class="container">
+								<h3>Work Experience</h3>
+								<ul class="feature-icons">
+									<li class="icon solid fa-building">
+										<b>디바인테크놀로지 (DivineTech) — AI 팀장</b> <span class="note">2025.09 ~ 재직 중</span><br />
+										심혈관 CT 기반 TAVR 계획 자동화 파이프라인 <b>cardiosim-ai</b> 설계·개발 및 팀 리드
+										<ul>
+											<li>nnUNetv2 3-모델 캐스케이드: 전심장 23-class 분할 → Aorta/LV/Coronary 세부 분할 → CT+Mask 2채널 입력 9점 랜드마크 검출</li>
+											<li>확률맵(center-of-mass/argmax) 기반 랜드마크 복구, IJK/RAS/VTK 3종 좌표계 정합, VTK marching cubes로 STL 생성</li>
+											<li>Commissure 3점 기반 3-leaflet 판막 모델링 · HU 임계치 석회화 자동 추출 · centerline 피팅으로 TAVR 지표 자동 계측</li>
+											<li>Polling Worker + REST 아키텍처, GPU lazy load/release, 2-GPU 병렬 배치, 단계별 부분 실패 허용 + E2E 테스트, Docker/GitOps CI-CD 배포</li>
+										</ul>
+										<span class="tag">nnUNetv2</span><span class="tag">PyTorch/CUDA</span><span class="tag">VTK</span><span class="tag">SimpleITK</span><span class="tag">Docker/GitOps</span>
+									</li>
+									<li class="icon solid fa-building">
+										<b>테서 (Tesser) — R&amp;D AI 연구원</b> <span class="note">2023.05 ~ 2025.08 · 2년 3개월</span><br />
+										폐암 RECIST 치료반응 자동평가 AI <b>AIRECIST</b> 파이프라인 전체 총괄
+										<ul>
+											<li>전문의 간 판정 일치율 70% 미만의 재현성 문제를 4단계로 분해: 폐 종양 분할 → 치료 전후 폐 정합 → 종양 추적 → RECIST 자동판정</li>
+											<li>nnUNet 계열 분할 + ROI 전처리(DICOM→NIfTI, 폐 윈도우 HU clipping), VoxelMorph 기반 정합, 종양 추적 알고리즘 직접 설계·구현</li>
+											<li>결과: 병변 분할 Dice 82%, RECIST 자동판정 정확도 91%, 아산병원 영상의학과 임상 타당성 검증 완료</li>
+											<li>산업통상자원부 국책과제(심혈관계 생체역학 디지털 시뮬레이터) 참여, DCE-MRI 유방암 분할 연구, LLM 프롬프트 엔지니어링 수행</li>
+										</ul>
+										<span class="tag">CT</span><span class="tag">Lung Segmentation</span><span class="tag">Registration</span><span class="tag">RECIST</span>
+									</li>
+									<li class="icon solid fa-building">
+										<b>메디컬아이피 (MedicalIP) — R&amp;D AI 연구원</b> <span class="note">2022.03 ~ 2023.04 · 1년 1개월</span><br />
+										상용 분할·GAN·정합 모델 개발 및 제품화
+										<ul>
+											<li><b>DeepCATCH</b>(상용): CT 전신 다장기 분할 30+ class — 2D/3D nnUNet·SwinUNETR·U-Net로 대용량·다기관 데이터에서 일관 품질 달성</li>
+											<li><b>TiSepX</b>(상용): X-ray 조직 분리 GAN(Bone/Lung/Pulmonary) — CycleGAN·DP-GAN·BMD-GAN·OASIS 비교, 모델 경량화로 골절 검출·DEXA 골밀도 목적 결과 도출</li>
+											<li><b>Lung/Multi-phase Registration</b>(등록 특허, 공동발명자): Lung Seg → Affine → DL Registration(VoxelMorph 기반 Cascade), Patch 학습 + Sliding-Window 추론</li>
+											<li>결과: Prone 자세 좌하엽 +90.2mL·우하엽 +52.5mL 부피 증가 정량화, 좌하엽 부피변화–FVC 상관 규명</li>
+										</ul>
+										<span class="tag">nnUNet</span><span class="tag">SwinUNETR</span><span class="tag">VoxelMorph</span><span class="tag">CycleGAN 계열</span>
+									</li>
+									<li class="icon solid fa-flask">
+										<b>가천대학교 MMMIL Lab — 학부연구생 · 석사연구원</b> <span class="note">2018.07 ~ 2022.02</span><br />
+										다중모달 의료영상 연구 (지도교수 김행근)
+										<ul>
+											<li>EEG 호흡 패턴 분류: LDA·Random Forest 기반 뇌파 분류 → SCI 1저자 논문(Brain Sciences, 2021)</li>
+											<li>AI-Dentis(부정교합·Cephalogram): Inception-ResNet 분류 + Grad-CAM, 제1대구치 상대거리 기반 신규 분류법 고안(석사 논문·특허·웹 상용화), 46-landmark 검출 및 라벨링 도구 개발</li>
+											<li>PET 영상재구성(SITL): 물리 내장 경량 모델 제안 — 파라미터 247K(DeepPET 63.6M 대비 257배 경량), SSIM 0.983 / PSNR 36.6dB, 길병원 PET Phantom 직접 제작·촬영으로 검증</li>
+										</ul>
+										<span class="tag">EEG</span><span class="tag">Inception-ResNet</span><span class="tag">PET Reconstruction</span>
+									</li>
+								</ul>
+							</div>
+						</section>
+
+					<!-- Three: Education -->
+						<section id="three">
+							<div class="container">
+								<h3>Education</h3>
+								<table class="resume-table">
+									<tr>
+										<th>2020.03 – 2022.02</th>
+										<td>가천대학교 융합의과학과 의용생체공학전공 · <b>공학석사</b><br />GPA 4.38/4.5 · MMMIL Lab · 지도교수 김행근<br /><span class="note">석사 학위논문: 제1대구치 사이의 유사 상대 거리를 이용한 딥러닝 기반 부정교합 분류 (2022)</span></td>
+									</tr>
+									<tr>
+										<th>2014.03 – 2020.02</th>
+										<td>가천대학교 의용생체공학과 · <b>공학사</b><br /><span class="note">육군 만기전역(2015~2017)</span></td>
+									</tr>
+								</table>
+							</div>
+						</section>
+
+					<!-- Four: Portfolio -->
+						<section id="four">
+							<div class="container">
+								<h3>Portfolio</h3>
+								<p>대표 GitHub 프로젝트입니다. 전체 목록은 <a href="https://github.com/HongYongGi">github.com/HongYongGi</a> 참고.</p>
+								<div class="row gtr-uniform">
+									<div class="col-6 col-12-small">
+										<div class="proj-card">
+											<h4>TAVR CT Measurement Pipeline</h4>
+											<p>심장 CT 분할·랜드마크로부터 TAVR 계측 17종을 자동 산출하는 파이프라인 (cardiosim-ai 핵심 모듈).</p>
+											<ul class="actions small"><li><a href="https://github.com/HongYongGi/tavr-ct-measurement" class="button small">GitHub</a></li></ul>
+										</div>
+									</div>
+									<div class="col-6 col-12-small">
+										<div class="proj-card">
+											<h4>Cardiac Calcium / Stent Extraction</h4>
+											<p>심장 CT에서 관상동맥·대동맥 석회화를 금속 스텐트와 분리 추출 (HU 임계치, NIfTI 분할마스크 내 연산).</p>
+											<ul class="actions small"><li><a href="https://github.com/HongYongGi/cardiac-calcium-stent-extraction" class="button small">GitHub</a></li></ul>
+										</div>
+									</div>
+									<div class="col-6 col-12-small">
+										<div class="proj-card">
+											<h4>Medical 3D Viewer</h4>
+											<p>nnUNetv2 분할·MPR·3D 시각화 의료영상 뷰어 (Python + Go + Three.js, Streamlit 기반).</p>
+											<ul class="actions small"><li><a href="https://github.com/HongYongGi/medical-3d-viewer" class="button small">GitHub</a></li></ul>
+										</div>
+									</div>
+									<div class="col-6 col-12-small">
+										<div class="proj-card">
+											<h4>Bone Fracture Detection AI</h4>
+											<p>X-ray 골절 검출 AI (ResNet50 + Grad-CAM, Acc 99.01% / AUC 0.9983).</p>
+											<ul class="actions small"><li><a href="https://github.com/HongYongGi/bone-fracture" class="button small">GitHub</a></li></ul>
+										</div>
+									</div>
+									<div class="col-6 col-12-small">
+										<div class="proj-card">
+											<h4>Lung Registration</h4>
+											<p>VoxelMorph 기반 3D 폐 영상 정합 학습·추론 코드 (등록 특허 10-2750467 관련 연구).</p>
+											<ul class="actions small"><li><a href="https://github.com/HongYongGi/LungRegistration" class="button small">GitHub</a></li></ul>
+										</div>
+									</div>
+									<div class="col-6 col-12-small">
+										<div class="proj-card">
+											<h4>EEG_ML</h4>
+											<p>EEG 뇌파 신호 기반 호흡 패턴 분류 (LDA·Random Forest) — SCI 1저자 논문 코드.</p>
+											<ul class="actions small"><li><a href="https://github.com/HongYongGi/EEG_ML" class="button small">GitHub</a></li></ul>
+										</div>
+									</div>
+								</div>
+							</div>
+						</section>
+
+					<!-- Five: Patents & Copyrights -->
+						<section id="five">
+							<div class="container">
+								<h3>Patents &amp; Copyrights</h3>
+								<table class="resume-table">
+									<tr><th>등록 10-2782506</th><td>앙상블 기반 부정교합 분류 방법 및 애플리케이션 (2025.03.12 등록) — 공동발명자, AI-Dentis 관련</td></tr>
+									<tr><th>등록 10-2750467</th><td>의료영상 정합방법 및 그 장치 (2024.12.31 등록) — 공동발명자, Lung Registration 관련</td></tr>
+								</table>
+								<br />
+								<table class="resume-table">
+									<tr><th>C-2020-041029-2</th><td>부정교합 분류 웹 — 저작권 등록, 업무상 창작 참여 (덴티스 웹 상용화)</td></tr>
+									<tr><th>C-2021-033245</th><td>두부계측 X-ray 라벨링 도구 — 저작권 등록, 업무상 창작 참여 (덴티스 웹 상용화)</td></tr>
+								</table>
+							</div>
+						</section>
+
+					<!-- Six: Publications -->
+						<section id="six">
+							<div class="container">
+								<h3>Publications</h3>
+								<ul>
+									<li><b>Hong, Yong-Gi et al.</b>, "Identification of Breathing Patterns through EEG Signal Analysis Using Machine Learning", <i>Brain Sciences</i> 11(3):293, 2021. <b>[SCI · 제1저자]</b></li>
+									<li>홍용기, "제1대구치 사이의 유사 상대 거리를 이용한 딥러닝 기반 부정교합 분류", 가천대학교 석사학위논문, 2022.</li>
+									<li>"Image Reconstruction Network with Sinogram-to-Image Transform Layer for Projection Data" (PET 재구성) <span class="note">[준비 중]</span></li>
+									<li>"Deep learning segmentation &amp; registration-driven lung parenchymal volume/movement CT analysis in prone positioning" (폐 정량 분석) <span class="note">[준비 중]</span></li>
+								</ul>
+							</div>
+						</section>
+
+					<!-- Seven: Certifications & Awards -->
+						<section id="seven">
+							<div class="container">
+								<h3>Certifications &amp; Awards</h3>
+								<ul>
+									<li><b>2025 새싹 해커톤(SeSAC Hackathon) 오프라인 본선 2등 · 서울시장상</b> — 주최 DACON, 32팀 중 2위 (2025.12)<br /><span class="note">팀 둥지랩(NEST Lab) · 곤충 생태·위험도 플랫폼 — YOLOv8 객체 검출 + 계층 분류 + 위험도 판정 웹 서비스</span></li>
+									<li>Ansys Certified Expert / Fluids 채널 파트너 인증 4건 (2026.07, Synopsys)</li>
+								</ul>
+							</div>
+						</section>
+
+				</div>
+
+				<!-- Footer -->
+					<section id="footer">
+						<div class="container">
+							<ul class="copyright">
+								<li>&copy; Yong-Gi Hong. All rights reserved.</li><li>Template: <a href="http://html5up.net">HTML5 UP</a></li>
+							</ul>
+						</div>
+					</section>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="/assets/resume/js/jquery.min.js"></script>
+			<script src="/assets/resume/js/jquery.scrollex.min.js"></script>
+			<script src="/assets/resume/js/jquery.scrolly.min.js"></script>
+			<script src="/assets/resume/js/browser.min.js"></script>
+			<script src="/assets/resume/js/breakpoints.min.js"></script>
+			<script src="/assets/resume/js/util.js"></script>
+			<script src="/assets/resume/js/main.js"></script>
+
+	</body>
+</html>
