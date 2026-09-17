@@ -5,7 +5,6 @@ summary: >-
   심장 CT 분할·랜드마크로부터 TAVR 계측 17종을 자동 산출하는 파이프라인 (cardiosim-ai 핵심 모듈).
 period: "2025.09 —"
 role: 설계·개발
-repo: https://github.com/HongYongGi/tavr-ct-measurement
 stack:
   - nnUNetv2
   - PyTorch/CUDA
