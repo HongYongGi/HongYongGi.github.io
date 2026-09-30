@@ -155,7 +155,7 @@ layout: raw
           대표 성과
           <ul class="tag-list" style="margin-top:var(--space-3)">
             <li class="tag tag--accent">폐암 RECIST 자동판정 정확도 91% (병변 분할 Dice 82%, 아산병원 임상 검증)</li>
-            <li class="tag tag--accent">PET 재구성 모델 257배 경량화 (SSIM 0.983)</li>
+            <li class="tag tag--accent">PET 재구성 모델 257배 경량화 — PyTorch 재구현으로 원 지표 재현 (SSIM 0.987 / PSNR 37.0dB)</li>
             <li class="tag tag--accent">자세별 폐엽 부피변화 좌하엽 +90.2mL 정량화</li>
           </ul>
         </blockquote>
@@ -357,6 +357,7 @@ layout: raw
               <li>EEG 호흡 패턴 분류: LDA·Random Forest 기반 뇌파 분류 → SCI 1저자 논문(Brain Sciences, 2021)</li>
               <li>AI-Dentis(부정교합·Cephalogram): Inception-ResNet 분류 + Grad-CAM, 제1대구치 상대거리 기반 신규 분류법 고안(석사 논문·특허·웹 상용화), 46-landmark 검출 및 라벨링 도구 개발</li>
               <li>PET 영상재구성(SITL): 물리 내장 경량 모델 제안 — 파라미터 247K(DeepPET 63.6M 대비 257배 경량), SSIM 0.983 / PSNR 36.6dB, 길병원 PET Phantom 직접 제작·촬영으로 검증</li>
+              <li>SITL 재구현(2026): 유실된 TensorFlow 파이프라인을 PyTorch로 복원해 테스트셋 15,787장에서 원 결과 재현 — SSIM 0.987 / PSNR 37.04dB / RMSE 1.62%. Point-wise convolution을 SITL에 융합해 샘플당 중간 텐서를 84배(8.4GB → 0.1GB) 줄여 512×512 학습을 가능하게 했고, 인덱스 사전계산을 해석적으로 다시 써 동일 출력에 1,437배 가속</li>
             </ul>
           </div>
           <div class="tag-list" style="margin-top: var(--space-5);">
@@ -480,8 +481,8 @@ layout: raw
         <article>
           <div class="card-icon"><i class="fas fa-brain" aria-hidden="true"></i></div>
           <h3 class="card-title">PET 영상재구성 — SITL</h3>
-          <p class="card-desc">Sinogram 재구성 네트워크의 Fully-Connected Layer를 SITL로 대체해 파라미터를 257배 줄이고도 복원 품질을 지켰습니다 (석사 연구).</p>
-          <div class="card-meta"><i class="fas fa-file-lines" aria-hidden="true"></i> 247K params · 257× lighter</div>
+          <p class="card-desc">Sinogram 재구성 네트워크의 Fully-Connected Layer를 SITL로 대체해 파라미터를 257배 줄이고도 복원 품질을 지켰습니다 (석사 연구). 2026년 PyTorch로 재구현해 원 지표를 재현하고, 메모리를 84배 줄여 512×512 학습을 가능하게 했습니다.</p>
+          <div class="card-meta"><i class="fas fa-file-lines" aria-hidden="true"></i> 247K params · 257× lighter · SSIM 0.987 재현</div>
           <a href="/projects/pet-reconstruction/" class="btn btn-primary btn--sm portfolio-link">케이스 스터디 <i class="fas fa-arrow-right" aria-hidden="true"></i></a>
           <a href="https://github.com/HongYongGi/PET_sinogram" target="_blank" rel="noopener" class="btn btn-outline btn--sm portfolio-link">
             <i class="fab fa-github" aria-hidden="true"></i> GitHub <i class="fas fa-external-link-alt" aria-hidden="true"></i>

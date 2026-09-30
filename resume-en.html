@@ -152,7 +152,7 @@ permalink: /resume/en/
           Highlights
           <ul class="tag-list" style="margin-top:var(--space-3)">
             <li class="tag tag--accent">Lung-cancer RECIST auto-assessment at 91% accuracy (lesion Dice 82%, validated at Asan Medical Center)</li>
-            <li class="tag tag--accent">PET reconstruction model 257× lighter (SSIM 0.983)</li>
+            <li class="tag tag--accent">PET reconstruction model 257× lighter — published metrics reproduced in PyTorch (SSIM 0.987 / PSNR 37.0 dB)</li>
             <li class="tag tag--accent">Posture-dependent lobar volume change quantified at +90.2 mL (LLL)</li>
           </ul>
         </blockquote>
@@ -354,6 +354,7 @@ permalink: /resume/en/
               <li>EEG breathing-pattern classification with LDA/Random Forest → 1st-author SCI paper (Brain Sciences, 2021)</li>
               <li>AI-Dentis (malocclusion &amp; cephalogram): Inception-ResNet classifier with Grad-CAM → novel first-molar relative-distance classification (master's thesis, patent, web commercialization); 46-landmark cephalogram detection and a labeling tool</li>
               <li>PET reconstruction (SITL): physics-informed lightweight model — 247K parameters (vs. DeepPET's 63.6M → 257× lighter), SSIM 0.983 / PSNR 36.6 dB, validated with a self-fabricated PET phantom</li>
+              <li>SITL reimplementation (2026): rebuilt the lost TensorFlow pipeline in PyTorch and reproduced the published result on a 15,787-image test set — SSIM 0.987 / PSNR 37.04 dB / RMSE 1.62%. Fusing the point-wise convolution into SITL cut the per-sample intermediate tensor 84× (8.4 GB → 0.1 GB), making 512×512 trainable; an analytic rewrite of the index precomputation runs 1,437× faster with byte-identical output</li>
             </ul>
           </div>
           <div class="tag-list" style="margin-top: var(--space-5);">
@@ -477,8 +478,8 @@ permalink: /resume/en/
         <article>
           <div class="card-icon"><i class="fas fa-brain" aria-hidden="true"></i></div>
           <h3 class="card-title">PET Reconstruction — SITL</h3>
-          <p class="card-desc">Replaced the fully-connected layer of a sinogram reconstruction network with SITL, cutting parameters 257× without losing reconstruction quality (master's research).</p>
-          <div class="card-meta"><i class="fas fa-file-lines" aria-hidden="true"></i> 247K params · 257× lighter</div>
+          <p class="card-desc">Replaced the fully-connected layer of a sinogram reconstruction network with SITL, cutting parameters 257× without losing reconstruction quality (master's research). Rebuilt in PyTorch in 2026, reproducing the published metrics and making 512×512 trainable through an 84× memory reduction.</p>
+          <div class="card-meta"><i class="fas fa-file-lines" aria-hidden="true"></i> 247K params · 257× lighter · SSIM 0.987 reproduced</div>
           <a href="/projects/pet-reconstruction/" class="btn btn-primary btn--sm portfolio-link">Case study <i class="fas fa-arrow-right" aria-hidden="true"></i></a>
           <a href="https://github.com/HongYongGi/PET_sinogram" target="_blank" rel="noopener" class="btn btn-outline btn--sm portfolio-link">
             <i class="fab fa-github" aria-hidden="true"></i> GitHub <i class="fas fa-external-link-alt" aria-hidden="true"></i>
