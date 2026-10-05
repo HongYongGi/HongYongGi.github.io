@@ -1,7 +1,7 @@
 ---
 title: "UMUD 챌린지 ② — 모델은 그대로, 재는 법만 바꿨더니 0.742 → 0.505"
 date: 2026-09-30 21:45:00 +0900
-categories: [Kaggle]
+categories: [Kaggle, UMUD Muscle Ultrasound]
 tags: [kaggle, umud, ultrasound, muscle-architecture, geometry, evaluation]
 math: true
 ---

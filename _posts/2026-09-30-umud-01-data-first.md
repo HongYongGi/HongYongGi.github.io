@@ -1,7 +1,7 @@
 ---
 title: "UMUD 챌린지 ① — 모델보다 데이터부터: 늘어난 초음파와 뒤집힌 팔레트"
 date: 2026-09-30 16:54:00 +0900
-categories: [Kaggle]
+categories: [Kaggle, UMUD Muscle Ultrasound]
 tags: [kaggle, umud, ultrasound, muscle-architecture, data-preprocessing, data-quality]
 math: true
 ---

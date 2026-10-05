@@ -1,7 +1,7 @@
 ---
 title: "UMUD 챌린지 ③ — 112등에서 19등으로: 측정값 앙상블과 '평가자는 어떤 화면을 봤나'"
 date: 2026-10-01 09:10:00 +0900
-categories: [Kaggle]
+categories: [Kaggle, UMUD Muscle Ultrasound]
 tags: [kaggle, umud, ultrasound, ensemble, image-processing, hypothesis-testing]
 math: true
 ---

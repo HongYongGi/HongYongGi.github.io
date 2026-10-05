@@ -1,7 +1,7 @@
 ---
 title: "UMUD 챌린지 ④ — 0.325 → 0.271, 19등에서 6등으로: 화면마다 평가자의 좌표계가 달랐다"
 date: 2026-10-02 09:00:00 +0900
-categories: [Kaggle]
+categories: [Kaggle, UMUD Muscle Ultrasound]
 tags: [kaggle, umud, ultrasound, hypothesis-testing, validation, image-scale]
 math: true
 ---

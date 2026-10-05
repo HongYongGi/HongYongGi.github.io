@@ -1,7 +1,7 @@
 ---
 title: "UMUD 챌린지 ⑥ — 5등에서 3등으로: 측정 규칙 두 개, 그리고 잘 안 된 것들"
 date: 2026-10-05 12:00:00 +0900
-categories: [Kaggle]
+categories: [Kaggle, UMUD Muscle Ultrasound]
 tags: [kaggle, umud, ultrasound, measurement, error-analysis, validation]
 math: true
 ---

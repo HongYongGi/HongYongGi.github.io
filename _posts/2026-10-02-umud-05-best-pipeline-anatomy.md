@@ -1,7 +1,7 @@
 ---
 title: "UMUD 챌린지 ⑤ — 0.271 제출 해부: 무엇이 점수를 만들었고, 다음엔 무엇을 실험할까"
 date: 2026-10-02 09:10:00 +0900
-categories: [Kaggle]
+categories: [Kaggle, UMUD Muscle Ultrasound]
 tags: [kaggle, umud, ultrasound, pipeline, ablation, experiment-planning]
 math: true
 ---
