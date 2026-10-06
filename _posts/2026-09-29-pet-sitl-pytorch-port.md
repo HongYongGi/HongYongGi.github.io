@@ -1,7 +1,7 @@
 ---
 title: "잃어버린 코드 되살리기 — SITL 재구성 네트워크를 PyTorch로 이식하기"
 date: 2026-09-29 01:30:00 +0900
-categories: [Medical AI]
+categories: [Medical AI, Image Reconstruction]
 tags: [pet, image-reconstruction, pytorch, sitl, ddp, radon-transform, deep-learning]
 ---
 

@@ -1,7 +1,7 @@
 ---
 title: "블로그를 시작합니다"
 date: 2026-04-07 12:00:00 +0900
-categories: [Medical AI]
+categories: [General]
 tags: [blog, introduction]
 ---
 

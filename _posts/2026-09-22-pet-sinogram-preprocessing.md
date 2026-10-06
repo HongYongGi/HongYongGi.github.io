@@ -1,7 +1,7 @@
 ---
 title: "PET 영상재구성 학습 데이터 만들기 — 영상에서 Sinogram까지"
 date: 2026-09-22 14:00:00 +0900
-categories: [Medical AI]
+categories: [Medical AI, Image Reconstruction]
 tags: [pet, sinogram, radon-transform, image-reconstruction, preprocessing, fbp, mlem]
 ---
 

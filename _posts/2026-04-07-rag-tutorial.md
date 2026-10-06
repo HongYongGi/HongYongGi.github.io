@@ -1,7 +1,7 @@
 ---
 title: "RAG(Retrieval-Augmented Generation) 기본 개념과 구현 튜토리얼"
 date: 2026-04-07 10:00:00 +0900
-categories: [Medical AI]
+categories: [General]
 tags: [rag, llm, langchain, vector-database, embedding]
 ---
 

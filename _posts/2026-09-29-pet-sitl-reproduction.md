@@ -1,7 +1,7 @@
 ---
 title: "포스터 수치 되찾기 — 재현을 막고 있던 건 모델이 아니었다"
 date: 2026-09-29 19:00:00 +0900
-categories: [Medical AI]
+categories: [Medical AI, Image Reconstruction]
 tags: [pet, image-reconstruction, sitl, reproduction, deep-learning, pytorch]
 ---
 

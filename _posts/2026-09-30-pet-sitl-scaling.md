@@ -1,7 +1,7 @@
 ---
 title: "무엇이 재구성 품질을 결정하는가 — 잡음, 수용 영역, 그리고 해상도"
 date: 2026-09-30 16:00:00 +0900
-categories: [Medical AI]
+categories: [Medical AI, Image Reconstruction]
 tags: [pet, image-reconstruction, sitl, deep-learning, pytorch, denoising, deblurring]
 ---
 
