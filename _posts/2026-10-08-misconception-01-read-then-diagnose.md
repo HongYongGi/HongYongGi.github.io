@@ -6,7 +6,7 @@ tags: [kaggle, llm, vlm, qwen, lora, handwriting, ocr, education]
 math: true
 ---
 
-Kaggle의 **Misconception Detection in K-12 Student Workings**(주최 CoLearn) 대회에 참가했습니다. 대회 첫 이틀의 결과는 public LB **1위(0.647)**입니다. 아직 대회 초반이라 이 순위는 금방 바뀔 수 있습니다. 이 글은 문제를 어떻게 쪼갰는지, 그리고 그 과정에서 가장 의외였던 관찰을 정리합니다.
+Kaggle의 **Misconception Detection in K-12 Student Workings**(주최 CoLearn) 대회에 참가했습니다. 대회 첫 이틀의 결과는 public LB **1위(0.647)**입니다. 아직 대회 초반이라 이 순위는 금방 바뀔 수 있습니다. 대회 자체(데이터·라벨·평가·규칙)는 [⓪편 대회 개요](/posts/misconception-00-overview/)에 정리했습니다. 이 글은 문제를 어떻게 쪼갰는지, 그리고 그 과정에서 가장 의외였던 관찰을 정리합니다.
 
 > 대회 진행 중이라 코드는 싣지 않습니다. 대회 데이터는 아동의 학습지 사진이라 이미지·예시 풀이도 싣지 않습니다. 수치는 모두 직접 잰 값이고, 추정은 추정이라고 적었습니다.
 {: .prompt-info }
