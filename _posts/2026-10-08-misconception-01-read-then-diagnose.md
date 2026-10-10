@@ -89,3 +89,6 @@ Kaggle의 **Misconception Detection in K-12 Student Workings**(주최 CoLearn) �
 - 리더 평가 기준을 CER에서 "진단 점수"로 바꾸고, 학생 오류를 보존하도록 리더 학습 목표를 조정
 
 대회 마감은 11월 17일입니다. 의미 있는 진전이 생기면 이어서 쓰겠습니다.
+
+> 이어지는 글: [②편 — 같은 문항 예시, 모범 풀이, 추론형 리랭커로 0.75까지](/posts/misconception-02-examples-and-rerank/)
+{: .prompt-tip }
