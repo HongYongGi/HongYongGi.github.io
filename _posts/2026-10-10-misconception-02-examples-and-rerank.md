@@ -1,6 +1,6 @@
 ---
 title: "학생 손글씨 풀이에서 오개념 찾기 ② — 0.68에서 0.75로: 같은 문항 예시, 모범 풀이, 그리고 '생각하는' 리랭커"
-date: 2026-10-10 16:00:00 +0900
+date: 2026-10-10 15:00:00 +0900
 categories: [LLM, Misconception Detection]
 tags: [kaggle, llm, vlm, qwen, rerank, reasoning, few-shot, budget-forcing]
 math: true
